@@ -1,0 +1,185 @@
+:root {
+  --primary-color: #D1FAFF;
+  --secondary-color: #9BD1E5;
+  --tertiary-color: #6A8EAE;
+  --quaternary-color: #57A773;
+  --quinary-color: #157145;
+  --black-color: rgb(20, 20, 20);
+  --white-color: #fcfcfc;
+}
+html{
+  font-size:62.5%;
+}
+
+*, *::before, *::after{
+  box-sizing:border-box;
+}
+
+*{
+  margin:0;
+  padding:0;
+}
+
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+body{
+  display:flex;
+  flex-direction:column;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+
+}
+
+main{
+  display:flex;
+  flex-direction:column;
+  flex:1;
+  background-color: var(--quaternary-color);
+
+}
+
+footer {
+  flex-shrink: 0;
+  background-color: var(--primary-color);
+  text-align: center;
+
+  color: var(--color-blue);
+  padding: 3rem 0;
+}
+
+h1, h2, h3, h4{
+  font-family: 'Space Mono', monospace;
+  font-weight: 700;
+}
+
+h1{
+  font-size: 2.4rem;
+  color: var(--black-color);
+}
+h2{
+  font-size: 2rem;
+  color: var(--black-color);
+}
+h3{
+  font-size: 1.6rem;
+  color: var(--black-color);
+}
+h4{
+  font-size: 1.4rem;
+  color: var(--black-color);
+}
+
+a{
+  text-decoration: none;
+  color: var(--black-color);
+}
+
+p{
+  font-size: 1.4rem;
+  color: var(--black-color);
+}
+
+/* HEADER */
+
+header{
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  align-items:center;
+  background-color: var(--primary-color);
+}
+
+.me{
+  display:flex;
+  align-items: center;
+  gap:2rem;
+  margin:2rem 0;
+}
+
+.me img{
+  width: 15rem;
+  height: auto;
+}
+
+.me span{
+  font-size: 4rem;
+  color: var(--black-color);
+  font-family:'Space Mono', monospace;
+  ;
+}
+
+nav{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  width:100%;
+  background-color: var(--tertiary-color);
+}
+
+nav ul{
+  display:flex;
+  list-style:none;
+  gap:2rem;
+  margin: 1rem 0;
+}
+nav ul li{
+  font-size: 2rem;
+  color: var(--black-color);
+}
+
+nav ul li a{
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  color: var(--white-color);
+  display: inline-block;
+}
+nav ul li a:hover{
+  color: var(--primary-color);
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+}
+
+/* main */
+h1{
+  color: var(--white-color);
+  margin: 2rem 1rem;
+}
+
+.card {
+  background-color: var(--secondary-color);
+  margin: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+
+.card h2 {
+  font-size: 2rem;
+  text-align: center;
+  padding: 1rem;
+}
+
+.card ul, figure{
+  padding: 0 2rem;
+  background-color: var(--white-color);
+}
+
+.courses{
+  max-width: 100%;
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 3rem;
+  background-color: var(--white-color);
+}
+
+.courses p{
+  background-color: var(--secondary-color);
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  margin: 1rem 0;
+}

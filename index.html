@@ -6,14 +6,18 @@
   <meta name="description" content="">
   <meta name="author" content="Christopher Osuna E.">
   <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/large.css">
   <script src="scripts/getdates.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
   <title>Document</title>
 </head>
 <body>
   <header>
-    <div>
-      <img src="" alt="Christopher Osuna picture">
-      <span>Christopher Osuna</span>
+    <div class="me">
+      <img src="images/chris.webp" alt="Christopher Osuna picture">
+      <span class="name">Christopher Osuna</span>
     </div>
     <nav>
       <ul>
@@ -26,7 +30,7 @@
   </header>
   <main>
     <h1>Home</h1>
-    <section>
+    <section class="card">
       <h2>Course Work</h2>
       <ul>
         <li></li>
@@ -34,12 +38,14 @@
         <li></li>
       </ul>
     </section>
-    <section>
+    <section class="card">
       <h2>Tijuana, Mexico</h2>
-      <img src="" alt="Tijuana Downtown">
-      <figcaption>Tijuana Downtown</figcaption>
+      <figure>
+        <img src="" alt="Tijuana Downtown">
+        <figcaption>Tijuana Downtown</figcaption>
+      </figure>
     </section>
-    <section>
+    <section class="card">
       <h2>Web and Computer Programming Certificate</h2>
       <div>
         <button>All</button>
@@ -47,7 +53,7 @@
         <button>WDD</button>
       </div>
       <hr>
-      <div>
+      <div class="courses">
         <p>CSE 110</p>
         <p>WDD 130</p>
         <p>CSE 111</p>
