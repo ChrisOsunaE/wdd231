@@ -43,7 +43,6 @@
     transform: translateY(-100%); 
     opacity: 0; 
     transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1); 
-    pointer-events: none; 
   }
   
   .hamburger {
@@ -53,7 +52,6 @@
   nav.active ul {
     transform: translateY(0);
     opacity: 1; 
-    pointer-events: auto; 
   }
   
   .hamburger.active span:nth-child(1) {
