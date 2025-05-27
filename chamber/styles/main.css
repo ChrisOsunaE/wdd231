@@ -1,0 +1,99 @@
+:root {
+  --primary-color: #355691;
+  --secondary-color: #F3FFC6;
+  --tertiary-color: #4BC0D9;
+  --quaternary-color: #8A897C;
+  --quinary-color: #E9E6FF;
+  --white-color: #F0F4F9;
+  --black-blue: #0B121E;
+}
+html{
+  font-size:62.5%;
+}
+
+html, body {
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden; 
+  background-color: var(--quaternary-color); 
+}
+
+*, *::before, *::after{
+  box-sizing:border-box;
+}
+
+*{
+  margin:0;
+  padding:0;
+}
+
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+body{
+  display:flex;
+  flex-direction:column;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+
+}
+
+main {
+  display: grid;
+  grid-template-columns: 2fr 1fr; 
+  grid-template-rows: auto auto; 
+  gap: 1rem;
+  background-color: var(--quaternary-color);
+  padding: 1rem 3rem;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+footer {
+  flex-shrink: 0;
+  background-color: var(--primary-color);
+  text-align: center;
+
+  color: var(--color-blue);
+  padding: 3rem 0;
+}
+
+h1, h2, h3, h4{
+  font-family: 'Space Mono', monospace;
+  font-weight: 700;
+}
+
+h1{
+  font-size: 2.4rem;
+  color: var(--black-color);
+}
+h2{
+  font-size: 2rem;
+  color: var(--black-color);
+}
+h3{
+  font-size: 1.6rem;
+  color: var(--black-color);
+}
+h4{
+  font-size: 1.4rem;
+  color: var(--black-color);
+}
+
+a{
+  text-decoration: none;
+  color: var(--black-color);
+}
+
+p{
+  font-size: 1.4rem;
+  color: var(--black-color);
+  line-height: 1.5;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+}
