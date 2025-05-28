@@ -6,7 +6,6 @@
   --accent: #f3ffc6;
   --tertiary: #e9e6ff;
   --muted: #8a897c;
-
 }
 html {
   font-size: 62.5%;
@@ -114,7 +113,8 @@ header {
 }
 
 header img {
-  max-width: 250px;
+  width: 100%;
+  max-width: 150px;
   height: auto;
 }
 
@@ -180,7 +180,7 @@ nav ul li a:hover {
   transition: all 0.3s ease;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 750px) {
   header {
     position: relative;
   }
@@ -289,5 +289,19 @@ nav ul li a:hover {
   .hamburger.active span:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
     background-color: var(--primary);
+  }
+}
+
+@media (max-width: 350px) {
+  header h1 {
+    font-size: 2rem;
+  }
+  header img {
+    max-width: 120px;
+    height: auto;
+  }
+  .hamburger .bar {
+    width: 25px;
+    height: 2px;
   }
 }
