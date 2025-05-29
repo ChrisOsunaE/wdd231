@@ -35,7 +35,8 @@
           <li><a href="directory.html">Directory</a></li>
           <li><a href="#">Join</a></li>
           <li><a href="#">Discover</a></li>
-        </nav>
+        </ul>
+      </nav>
         <button class="hamburger" aria-label="Menu">
           <span class="bar"></span>
           <span class="bar"></span>
@@ -49,9 +50,16 @@
   
   <main>
     <section class="container">
-      <h2>Directory</h2>
-      <p>Welcome to the Chamber of Commerce directory. Here you can find various businesses and services in our community.</p>
-      <!-- Directory content goes here -->
+      <div class="directory-header">
+        <h2>Directory</h2>
+        <p>Welcome to the Chamber of Commerce directory. Here you can find various businesses and services in our community.</p>
+      </div>
+      <div class="view-toggle">
+        <button class="toggle-btn active" data-view="grid">Grid View</button>
+        <button class="toggle-btn" data-view="list">List View</button>
+      </div>
+      <div id="members-container" class="members-grid"></div>
+      <div id="members-list" class="members-list"></div>
     </section>
   </main>
 
