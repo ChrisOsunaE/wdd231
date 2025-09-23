@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "name": "Tech Solutions Inc.",
+    "address": "123 Innovation Blvd, Tech City",
+    "phone": "+1 (555) 123-4567",
+    "website": "https://techsolutions.example.com",
+    "image": "tech-solutions.png",
+    "membershipLevel": 3,
+    "industry": "Technology",
+    "email": "contact@techsolutions.example.com",
+    "description": "Provider of cutting-edge enterprise software solutions"
+  },
+  {
+    "id": 2,
+    "name": "Green Energy Co.",
+    "address": "456 Eco Avenue, Green Valley",
+    "phone": "+1 (555) 987-6543",
+    "website": "https://greenenergy.example.com",
+    "image": "green-energy.png",
+    "membershipLevel": 2,
+    "industry": "Renewable Energy",
+    "email": "info@greenenergy.example.com",
+    "description": "Sustainable energy solutions for businesses"
+  },
+  {
+    "id": 3,
+    "name": "Urban Foods Market",
+    "address": "789 Fresh Street, Metro City",
+    "phone": "+1 (555) 234-5678",
+    "website": "https://urbanfoods.example.com",
+    "image": "urban-foods.png",
+    "membershipLevel": 1,
+    "industry": "Food & Beverage",
+    "email": "orders@urbanfoods.example.com",
+    "description": "Organic produce and gourmet foods"
+  },
+  {
+    "id": 4,
+    "name": "Future Builders Architects",
+    "address": "101 Design Plaza, Urban Center",
+    "phone": "+1 (555) 876-5432",
+    "website": "https://futurebuilders.example.com",
+    "image": "future-builders.png",
+    "membershipLevel": 3,
+    "industry": "Architecture",
+    "email": "studio@futurebuilders.example.com",
+    "description": "Innovative sustainable architecture"
+  },
+  {
+    "id": 5,
+    "name": "BlueWave Logistics",
+    "address": "202 Shipping Lane, Port City",
+    "phone": "+1 (555) 345-6789",
+    "website": "https://bluewave.example.com",
+    "image": "bluewave-logistics.png",
+    "membershipLevel": 2,
+    "industry": "Transportation",
+    "email": "support@bluewave.example.com",
+    "description": "Global supply chain solutions"
+  },
+  {
+    "id": 6,
+    "name": "HealthPlus Clinics",
+    "address": "303 Wellness Road, Med District",
+    "phone": "+1 (555) 456-7890",
+    "website": "https://healthplus.example.com",
+    "image": "healthplus.png",
+    "membershipLevel": 1,
+    "industry": "Healthcare",
+    "email": "appointments@healthplus.example.com",
+    "description": "Integrated healthcare services"
+  },
+  {
+    "id": 7,
+    "name": "Golden Finance Group",
+    "address": "404 Investment Tower, Financial District",
+    "phone": "+1 (555) 567-8901",
+    "website": "https://goldenfinance.example.com",
+    "image": "golden-finance.png",
+    "membershipLevel": 3,
+    "industry": "Financial Services",
+    "email": "clients@goldenfinance.example.com",
+    "description": "Wealth management and investment strategies"
+  }
+]
