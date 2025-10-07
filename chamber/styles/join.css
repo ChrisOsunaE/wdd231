@@ -1,0 +1,319 @@
+.join-container {
+    margin-bottom: 4rem;
+}
+
+.join-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+}
+
+.membership-form {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.membership-form h2 {
+    color: var(--primary);
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+fieldset {
+    border: 2px solid var(--tertiary);
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    background: var(--background);
+}
+
+legend {
+    font-weight: 600;
+    color: var(--primary);
+    padding: 0 1rem;
+    font-size: 1.4rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+    color: var(--text);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 100%;
+    padding: 1rem;
+    border: 2px solid var(--tertiary);
+    border-radius: 5px;
+    font-size: 1.4rem;
+    margin-top: 0.5rem;
+    transition: border-color 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: var(--secondary);
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+    font-family: inherit;
+}
+
+/* Membership Options */
+.membership-options {
+    display: grid;
+    gap: 1rem;
+}
+
+.radio-option {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    border: 2px solid var(--tertiary);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-bottom: 0;
+}
+
+.radio-option:hover {
+    border-color: var(--secondary);
+    background: rgba(75, 192, 217, 0.05);
+}
+
+.radio-option input {
+    margin: 0 1rem 0 0;
+}
+
+.radio-custom {
+    width: 20px;
+    height: 20px;
+    border: 2px solid var(--primary);
+    border-radius: 50%;
+    margin-right: 1rem;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.radio-option input:checked + .radio-custom {
+    background: var(--primary);
+    border-color: var(--primary);
+}
+
+.radio-option input:checked + .radio-custom::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 8px;
+    height: 8px;
+    background: white;
+    border-radius: 50%;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 1.2rem;
+    font-size: 1.6rem;
+    margin-top: 1rem;
+}
+
+/* Membership Cards */
+.membership-cards h3 {
+    color: var(--primary);
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.cards-container {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.membership-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+.membership-card:nth-child(1) { animation-delay: 0.1s; }
+.membership-card:nth-child(2) { animation-delay: 0.2s; }
+.membership-card:nth-child(3) { animation-delay: 0.3s; }
+.membership-card:nth-child(4) { animation-delay: 0.4s; }
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.membership-card h4 {
+    color: var(--primary);
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+}
+
+.price {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--secondary);
+    margin-bottom: 1rem;
+}
+
+.description {
+    color: var(--muted);
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+}
+
+.info-btn {
+    background: var(--primary);
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.info-btn:hover {
+    background: var(--secondary);
+}
+
+.np-card {
+    border-top: 4px solid #27ae60;
+}
+
+.bronze-card {
+    border-top: 4px solid #cd7f32;
+}
+
+.silver-card {
+    border-top: 4px solid #c0c0c0;
+}
+
+.gold-card {
+    border-top: 4px solid #ffd700;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: white;
+    margin: 10% auto;
+    padding: 2rem;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 500px;
+    position: relative;
+    animation: modalSlideIn 0.3s ease;
+}
+
+@keyframes modalSlideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.close-modal {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    font-size: 2rem;
+    cursor: pointer;
+    color: var(--muted);
+    transition: color 0.3s ease;
+}
+
+.close-modal:hover {
+    color: var(--primary);
+}
+
+.modal-content h3 {
+    color: var(--primary);
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.modal-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.modal-content li {
+    padding: 0.5rem 0;
+    color: var(--text);
+    font-size: 1.4rem;
+}
+
+@media (min-width: 768px) {
+    .join-content {
+        grid-template-columns: 2fr 1fr;
+        gap: 4rem;
+    }
+    
+    .cards-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .membership-card {
+        margin-bottom: 0;
+    }
+}
+
+@media (min-width: 1024px) {
+    .join-content {
+        grid-template-columns: 3fr 1fr;
+    }
+}
+
+@media (max-width: 767px) {
+    .join-container {
+        padding: 0 1rem;
+    }
+    
+    .membership-form {
+        padding: 1.5rem;
+    }
+    
+    fieldset {
+        padding: 1rem;
+    }
+    
+    .modal-content {
+        margin: 20% auto;
+        width: 95%;
+    }
+}
