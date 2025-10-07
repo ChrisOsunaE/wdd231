@@ -157,6 +157,13 @@ nav ul li a:hover {
   transition: all 0.3s ease;
 }
 
+.menu-selection {
+  border-bottom: 2px solid var(--accent);
+    a { 
+      color: var(--secondary); 
+    }
+}
+
 /* HAMBURGER */
 
 .hamburger {

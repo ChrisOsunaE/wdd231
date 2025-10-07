@@ -1,0 +1,54 @@
+{
+  "events": [
+    {
+      "id": 1,
+      "title": "Business Networking Mixer",
+      "date": "March 15, 2024",
+      "time": "6:00 PM",
+      "location": "Chamber Conference Center",
+      "description": "Join local business owners for an evening of networking and collaboration. Great opportunity to make new connections and discuss potential partnerships.",
+      "image": "networking-event.jpg",
+      "category": "Networking"
+    },
+    {
+      "id": 2,
+      "title": "Economic Development Forum",
+      "date": "March 22, 2024", 
+      "time": "9:00 AM",
+      "location": "City Hall Auditorium",
+      "description": "Discuss the future of economic growth in our community with industry leaders. Learn about upcoming development projects and investment opportunities.",
+      "image": "forum-event.jpg",
+      "category": "Forum"
+    },
+    {
+      "id": 3,
+      "title": "Small Business Workshop",
+      "date": "April 5, 2024",
+      "time": "2:00 PM", 
+      "location": "Business Innovation Hub",
+      "description": "Learn essential skills for growing your small business in today's market. Topics include digital marketing, financial planning, and customer acquisition.",
+      "image": "workshop-event.jpg",
+      "category": "Workshop"
+    },
+    {
+      "id": 4,
+      "title": "Annual Chamber Gala",
+      "date": "April 20, 2024",
+      "time": "7:00 PM",
+      "location": "Grand Hotel Ballroom", 
+      "description": "Celebrate another successful year with the Chamber community. Black tie optional event with dinner, awards ceremony, and live entertainment.",
+      "image": "gala-event.jpg",
+      "category": "Social"
+    },
+    {
+      "id": 5,
+      "title": "Export & Trade Seminar",
+      "date": "May 8, 2024",
+      "time": "10:00 AM",
+      "location": "International Business Center",
+      "description": "Expert guidance on expanding your business internationally. Learn about export regulations, market entry strategies, and trade financing.",
+      "image": "trade-seminar.jpg",
+      "category": "Seminar"
+    }
+  ]
+}
