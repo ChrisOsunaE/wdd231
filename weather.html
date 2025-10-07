@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Card - OpenWeatherMap</title>
+    <link rel="stylesheet" href="styles/weather.css">
+    <script src="scripts/weather.js" defer></script>
+</head>
+<body>
+    <div class="weather-card">
+        <h1>Current Weather</h1>
+        
+        <div class="location">
+            <i>📍</i>
+            <span>Trier, Germany</span>
+        </div>
+        
+        <main>
+            <div class="weather-main">
+                <div class="temperature">
+                    <span id="current-temp">--</span><span>°F</span>
+                </div>
+                <div class="weather-icon">
+                    <img id="weather-icon" src="" alt="Weather Icon">
+                </div>
+            </div>
+            
+            <div class="weather-desc">
+                <figcaption id="weather-desc"></figcaption>
+            </div>
+            
+        </main>
+        
+        <footer>
+            Chris Osuna | <a href="https://openweathermap.org/">OpenWeatherMap.org</a>
+        </footer>
+    </div>
+</body>
+</html>
