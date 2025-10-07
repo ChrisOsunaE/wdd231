@@ -1,3 +1,28 @@
+.hero {
+  background: linear-gradient(rgba(53, 86, 145, 0.8), rgba(53, 86, 145, 0.6)), 
+              url('../images/hero.webp') center/cover no-repeat;
+  color: white;
+  padding: 8rem 2rem;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.hero-content h2 {
+  font-size: 3.2rem;
+  margin-bottom: 1.5rem;
+  color: var(--accent);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero-content p {
+  font-size: 1.8rem;
+  margin-bottom: 3rem;
+  color: white;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .join-container {
     margin-bottom: 4rem;
 }
@@ -91,6 +116,7 @@ textarea {
 }
 
 .radio-option input {
+    display:none;
     margin: 0 1rem 0 0;
 }
 
