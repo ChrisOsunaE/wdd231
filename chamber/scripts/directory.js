@@ -52,7 +52,6 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   function displayMembers(members) {
-    console.log(members);
 
     if (!Array.isArray(members)) {
       console.error("Members data is not an array", members);
