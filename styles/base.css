@@ -27,9 +27,72 @@
   font-style: normal;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
 
+p, li, a, span {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: var(--neutral-color);
+}
 
 header{
   display: grid;
-  grid-template-columns: 24px auto 24px;
+  grid-template-columns: 40px auto auto 24px;
+  align-items: center;
+  padding: 0rem 1rem;
+  border-bottom: 2px solid rgba(0, 46, 93, 0.2);
+  gap: 1rem;
+}
+
+.logo {
+  background-color: var(--primary-color);
+  padding: 0.5rem;
+  border-radius: 5%;
+  width: 24px;
+  height: 24px;
+  margin-right: 1rem;
+}
+
+.title {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: var(--primary-color);
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: right;
+  margin: 1rem;
+}
+
+.nav-menu ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.nav-menu ul li a {
+  text-decoration: none;
+  color: var(--primary-color);
+  padding-bottom: 0.25rem;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-menu ul li a:hover {
+  border-bottom-color: var(--secondary-color);
 }
