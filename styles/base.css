@@ -1,3 +1,4 @@
+
 /* Colors  */
 :root {
   --primary-color: #002e5d;
@@ -5,6 +6,11 @@
   --tertiary-color: #036f86;
   --neutral-color: #f4f4f4;
 }
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 
 .montserrat-headline {
   font-family: "Montserrat", sans-serif;
@@ -48,25 +54,24 @@ body {
 
 header{
   display: grid;
-  grid-template-columns: 40px auto auto 24px;
+  grid-template-columns: 48px auto auto 48px;
   align-items: center;
+  column-gap: 1rem;
   padding: 0rem 1rem;
   border-bottom: 2px solid rgba(0, 46, 93, 0.2);
-  gap: 1rem;
 }
 
 .logo {
+  display: block;
+  width: 100%;
+  height: auto;
   background-color: var(--primary-color);
   padding: 0.5rem;
   border-radius: 5%;
-  width: 24px;
-  height: 24px;
-  margin-right: 1rem;
 }
 
 .title {
   font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
   font-weight: 700;
   font-size: 1.5rem;
   color: var(--primary-color);
@@ -95,6 +100,28 @@ header{
 
 .nav-menu ul li a:hover {
   border-bottom-color: var(--secondary-color);
+}
+
+.nav-menu .current a {
+  border-bottom-color: var(--secondary-color);
+  font-weight: 700;
+}
+
+.hamburger {
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+.hamburger::before {
+  content: "\2630";
+  font-size: 2rem;
+}
+
+.hamburger.show::before {
+  content: "\2715";
 }
 
 .home-title {
