@@ -28,22 +28,31 @@
 
 
   <main>
-    <h1>Home</h1>
+    <h1 class="home-title">Home</h1>
 
-    <section>
-      <h2>About Me</h2>
-      <p>Hi, my name is Christopher Osuna. I am a student at the BYU-Pathway, studying Software Development.</p>
-      <h2>Student Photo</h2>
-      <img src="images/student-photo.jpg" alt="Christopher Osuna" width="200" height="200">
-      <!-- caption -->
-      <figcaption>Christopher Osuna</figcaption>
+    <section class="about-me">
+      <div class="container">
+        <h2>About Me</h2>
+        <p>Hi, my name is Christopher Osuna. I am a student at the BYU-Pathway, studying Software Development.</p>
+      </div>
+      <div class="container my-photo">
+        <h2>Student Photo</h2>
+        <img src="images/my-photo.webp" alt="Christopher Osuna">
+        <figcaption>Christopher Osuna</figcaption>
+      </div>
     </section>
-    <section>
+    <section class="courses">
       <h2>Web Certificate Courses</h2>
-      
-        <h3>WDD 130</h3>
-        <h3>WDD 131</h3>
-        <h3>WDD 231</h3>
+
+      <div class="filter">
+        <button class="btn" data-filter="all">All</button>
+        <button class="btn" data-filter="cse">CSE</button>
+        <button class="btn" data-filter="wdd">WDD</button>
+      </div>
+
+      <h3>WDD 130</h3>
+      <h3>WDD 131</h3>
+      <h3>WDD 231</h3>
       
       </ul>
     </section>
