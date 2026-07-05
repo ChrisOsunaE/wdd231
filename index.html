@@ -44,18 +44,18 @@
         <figcaption>Christopher Osuna</figcaption>
       </div>
     </section>
+    
     <section class="courses">
       <h2>Web Certificate Courses</h2>
 
       <div class="filter">
-        <button class="btn" data-filter="all">All</button>
-        <button class="btn" data-filter="cse">CSE</button>
-        <button class="btn" data-filter="wdd">WDD</button>
+        <button id="all-btn" class="btn" >All</button>
+        <button id="cse-btn" class="btn">CSE</button>
+        <button id="wdd-btn" class="btn">WDD</button>
       </div>
 
-      <h3>WDD 130</h3>
-      <h3>WDD 131</h3>
-      <h3>WDD 231</h3>
+      <div id="course-container" class="course-grid"></div>
+      <p id="total-credits" class="total-credits"></p>
       
       </ul>
     </section>
@@ -74,6 +74,7 @@
     <p>&copy;<span id="currentYear"></span> Christopher Osuna. México</p>
     <p id="lastModified"></p>
   </footer>
-  <script src="scripts/navigation.js"></script>
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/courses.js" defer></script>
 </body>
 </html>
