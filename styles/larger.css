@@ -9,5 +9,39 @@
   .hamburger {
     display: none;
   }
+
+  .nav-menu {
+  display: flex;
+  position: static;
+  justify-content: right;
+  margin: 1rem;
+}
+
+.nav-menu ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.nav-menu ul li a {
+  text-decoration: none;
+  color: var(--primary-color);
+  padding: 0;
+  border-bottom: 2px solid transparent;
+  transition: color 0.3s ease;
+}
+
+.nav-menu a:hover {
+  transform: translateY(-2px);
+  color: var(--tertiary-color);
+}
+
+.nav-menu .current a {
+  font-weight: 700;
+  background-color: transparent;
+  color: var(--primary-color);
+  border-bottom-color: var(--secondary-color);
+}
   
 }
