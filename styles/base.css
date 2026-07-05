@@ -208,13 +208,26 @@ header{
   padding: 1.5rem;
   border-radius: 8px;
   transition: transform 0.3s ease;
+  position: relative;
 }
 
 .course-card p {
   font-size: 1rem;
   padding: 0;
   color: darkslategray;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.badge {
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  padding: 0.3rem 0.6rem;
+  border-radius: 10px;
+  font-size: 0.8rem;
+  border: 1px solid var(--secondary-color);
 }
 
 .course-card:hover {
@@ -232,8 +245,8 @@ header{
 }
 
 .course-card li {
-  background-color: var(--secondary-color);
-  color: var(--primary-color);
+  background-color: var(--tertiary-color);
+  color: var(--neutral-color);
   width: max-content;
   padding: 0.3rem 0.6rem;
   border-radius: 10px;

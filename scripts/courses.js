@@ -89,14 +89,16 @@ function displayCourses(courseList) {
     courseContainer.innerHTML = '';
     courseList.forEach(course => {
       const courseCard = document.createElement('div');
-      if (course.completed) {
-        courseCard.classList.add('completed');
-        const completedBadge = document.createElement('span');
-        completedBadge.textContent = 'Completed';
-      }
       courseCard.classList.add('course-card');
       courseCard.innerHTML = `<h3>${course.subject} ${course.number}</h3>`;
+      
+      if (course.completed) {
+        courseCard.classList.add('completed');
+        courseCard.innerHTML += `<span class="badge">&check; Completed</span>`;
+      }
+      
       courseCard.innerHTML += `<p>${course.title}: ${course.description}</p>`;
+
       const techList = document.createElement('ul');
       course.technology.forEach(tech => {
         const techItem = document.createElement('li');
