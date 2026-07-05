@@ -5,6 +5,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
   
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/courses.js" defer></script>
+  
   <!-- styles sheets  -->
   <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="styles/base.css">
@@ -12,7 +15,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Christopher Osuna</title>
-  <meta name="description" content="Christopher Osuna's student website.">
+  <meta name="description" content="Christopher Osuna's student portfolio for BYU-Pathway. Showcasing software development coursework, web project, and front-end code.">
   <meta name="author" content="Christopher Osuna">
 </head>
 <body>
@@ -33,18 +36,23 @@
   <main>
     <h1 class="home-title">Home</h1>
 
-    <section class="about-me">
-      <div class="container">
+    <div class="about-me">
+      <section class="container">
         <h2>About Me</h2>
-        <p>Hi, my name is Christopher Osuna. I am a student at the BYU-Pathway, 
-          studying Software Development.</p>
-      </div>
-      <div class="container my-photo">
+        <p>Hi, my name is Christopher Osuna. I'm from Tijuana, Mexico, studying Software Development at BYU-Pathway.</p>
+        <p>My days are basically split between building web projects (using HTML, CSS, JS, Python, and C#) and my three main priorities offline: eating pizza, playing basketball, and managing my farm in Stardew Valley. I like to keep things simple, honest, and functional—both in my code and in life.
+        </p>
+      </section>
+
+      <section class="container my-photo">
         <h2>Student Photo</h2>
-        <img src="images/my-photo.webp" alt="Christopher Osuna">
-        <figcaption>Christopher Osuna</figcaption>
-      </div>
-    </section>
+        <figure>
+          <img src="images/my-photo.webp" alt="Christopher Osuna">
+          <figcaption>Christopher Osuna</figcaption>
+        </figure>
+      </section>
+
+    </div>
 
     <section class="courses">
       <h2>Web Certificate Courses</h2>
@@ -73,7 +81,5 @@
     <p>&copy;<span id="currentYear"></span> Christopher Osuna. México</p>
     <p id="lastModified"></p>
   </footer>
-  <script src="scripts/navigation.js" defer></script>
-  <script src="scripts/courses.js" defer></script>
 </body>
 </html>

@@ -107,8 +107,6 @@ header{
   transition: transform 0.3s ease, color 0.3s ease;
 }
 
-
-
 .nav-menu .current a {
   font-weight: 700;
   background-color: var(--primary-color);
@@ -163,11 +161,13 @@ header{
 .my-photo {
   text-align: center;
 }
-
+figure {
+  margin: 1rem;
+}
 .about-me img {
-  width: 90%;
+  width: 100%;
   height: auto;
-  border-radius: 15px;
+  border-radius: 8px;
 }
 
 .about-me figcaption {
