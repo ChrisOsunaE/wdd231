@@ -1,0 +1,28 @@
+{
+  "family": "Osuna",
+  "date-arrived": "2023-01-01",
+  "records-count": 4,
+  "visited-by-bishopric": true,
+  "members": [
+    {
+      "name": "Christopher Osuna",
+      "birthday": "1980-01-01",
+      "gender": "male"
+    },
+    {
+      "name": "Alejandra Osuna",
+      "birthday": "1985-05-15",
+      "gender": "female"
+    },
+    {
+      "name": "Christopher Jr. Osuna",
+      "birthday": "2008-08-20",
+      "gender": "male"
+    },
+    {
+      "name": "Eren Osuna",
+      "birthday": "2016-01-01",
+      "gender": "male"
+    }
+  ]
+}
