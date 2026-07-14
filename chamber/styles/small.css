@@ -160,3 +160,41 @@ footer .social-links img {
 }
 
 
+/* directory */
+
+section.directory-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem;
+  gap: 1rem;
+}
+
+.view-buttons {
+  display: flex;
+  gap: 0rem;
+  border-radius: 5px;
+  padding: 0.3rem;
+  background-color: var(--tertiary-color);
+}
+
+.view-buttons button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background-color: var(--tertiary-color);
+  font-size: .8rem;
+  color: var(--primary-color);
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button.active {
+  background-color: var(--secondary-color);
+  color: var(--neutral-color);
+  border-radius: 5px;
+}
+

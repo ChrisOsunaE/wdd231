@@ -11,7 +11,7 @@
   <script src="scripts/timestamp.js" defer></script>
 
   <link rel="stylesheet" href="styles/normalize.css">
-  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/small.css">
   <link rel="stylesheet" href="styles/larger.css">
   <meta property="og:title" content="Chamber Tijuana">
   <meta property="og:description" content="Chamber Directory">
@@ -33,10 +33,24 @@
     <button id="nav-button" class="hamburger" aria-label="Toggle navigation"></button>
   </header>
   <main>
-    <section>
-      <h2>Directory</h2>
-      <p>Discover and connect with trusted local businesses driving prosperity in the Tijuana, Baja California region.</p>
+    <section class="directory-header">
+      <div class="directory-title">
+        <h2>Business Directory</h2>
+        <p>Discover and connect with trusted local businesses driving prosperity in the Tijuana, Baja California region.</p>
+      </div>
+      <div class="view-buttons">
+        <button id="grid-button">
+          <img src="images/grid.svg" alt="Grid view" width="24" height="24">
+          Grid</button>
+        <button id="list-button" class="active">
+          <img src="images/list.svg" alt="List view" width="24" height="24">
+          List</button>
+      </div>
     </section>
+    <section>
+      <div id="directory-container">
+      </div>
+    </section>  
   </main>
 
   <footer>

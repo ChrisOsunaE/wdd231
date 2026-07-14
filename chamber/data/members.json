@@ -1,0 +1,112 @@
+{
+  "companies": [
+    {
+      "id": 1,
+      "name": "Museo de Ciencias Frontera",
+      "address": "Tercera Etapa del Río, 22226 Tijuana, B.C.",
+      "phone": "+52 (664) 123-4567",
+      "email": "visitas@museofrontera.mx",
+      "image": "images/museofrontera-logo.png",
+      "membership": 1,
+      "description": "An interactive space designed for kids and visiting families to learn about science, technology, and the environment through hands-on exhibits. A perfect and educational vacation day trip.",
+      "website": "https://www.museofrontera.mx",
+      "category": "Family Entertainment"
+    },
+    {
+      "id": 2,
+      "name": "Baja Medical Excellence",
+      "address": "Blvd. Agua Caliente 456, Zona Río, 22010 Tijuana, B.C.",
+      "phone": "+52 (664) 987-6543",
+      "email": "info@bajamedical.com",
+      "image": "images/bajamedical-logo.png",
+      "membership": 3,
+      "description": "Cutting-edge clinic specializing in medical tourism. We offer family dentistry and pediatric services with the highest international standards for international travelers seeking quality care.",
+      "website": "https://www.bajamedical.com",
+      "category": "Health & Wellness"
+    },
+    {
+      "id": 3,
+      "name": "Tacos El Rey del Norte",
+      "address": "Calle 6ta 789, Zona Centro, 22000 Tijuana, B.C.",
+      "phone": "+52 (664) 246-8101",
+      "email": "pedidos@tacoselrey.com.mx",
+      "image": "images/tacoselrey-logo.png",
+      "membership": 2,
+      "description": "Authentic Tijuana-style taqueria. A welcoming atmosphere famous for its traditional street tacos and unmatched guacamole. A must-visit culinary tradition for anyone exploring the city.",
+      "website": "https://www.tacoselrey.com.mx",
+      "category": "Food & Dining"
+    },
+    {
+      "id": 4,
+      "name": "Refaccionaria del Noroeste",
+      "address": "Blvd. Díaz Ordaz 321, La Mesa, 22105 Tijuana, B.C.",
+      "phone": "+52 (664) 135-7913",
+      "email": "ventas@refaccionarianoroeste.com",
+      "image": "images/refacc-noroeste-logo.png",
+      "membership": 2,
+      "description": "Wide assortment of auto parts and tools. If you are road-tripping across the border, we specialize in replacement parts, batteries, and everything needed for emergency vehicle maintenance.",
+      "website": "https://www.refaccionarianoroeste.com",
+      "category": "Automotive Services"
+    },
+    {
+      "id": 5,
+      "name": "Burritos y Guisos La Mesa",
+      "address": "Blvd. Salinas 654, Aviación, 22014 Tijuana, B.C.",
+      "phone": "+52 (664) 864-2097",
+      "email": "hola@burritoslamesa.mx",
+      "image": "images/burritoslamesa-logo.png",
+      "membership": 1,
+      "description": "Delicious homemade food ready to enjoy. Specializing in authentic bean burritos and vegetarian options, ideal for a quick, family-friendly lunch while sightseeing.",
+      "website": "https://www.burritoslamesa.mx",
+      "category": "Food & Dining"
+    },
+    {
+      "id": 6,
+      "name": "Frontera Cloud Solutions",
+      "address": "Parque Industrial El Florido 987, 22234 Tijuana, B.C.",
+      "phone": "+52 (664) 321-6549",
+      "email": "contacto@fronteracloud.com",
+      "image": "images/fronteracloud-logo.png",
+      "membership": 3,
+      "description": "Modern software consulting and coworking spaces. A great hub for digital nomads and remote workers traveling through Baja, featuring networking events for tech professionals.",
+      "website": "https://www.fronteracloud.com",
+      "category": "Technology & Software"
+    },
+    {
+      "id": 7,
+      "name": "Tijuana Tech Hub",
+      "address": "Av. Paseo de los Héroes 159, Zona Río, 22010 Tijuana, B.C.",
+      "phone": "+52 (664) 753-9512",
+      "email": "contacto@tijuanatechhub.com",
+      "image": "images/tijuanatechhub-logo.png",
+      "membership": 2,
+      "description": "Tech hub and development agency offering short-term workspace solutions, reliable internet, and tech support for international visitors and traveling developers.",
+      "website": "https://www.tijuanatechhub.com",
+      "category": "Technology & Software"
+    },
+    {
+      "id": 8,
+      "name": "Servicio Mecánico El Centinela",
+      "address": "Libramiento Sur 753, Francisco Villa, 22150 Tijuana, B.C.",
+      "phone": "+52 (664) 159-7534",
+      "email": "citas@mecanicocentinela.mx",
+      "image": "images/mecanicocentinela-logo.png",
+      "membership": 3,
+      "description": "Trusted mechanic shop for cross-border travelers. We perform reliable oil changes, mileage checks, and general maintenance to ensure your road trip continues safely back home.",
+      "website": "https://www.mecanicocentinela.mx",
+      "category": "Automotive Services"
+    },
+    {
+      "id": 9,
+      "name": "Parque de Aventuras Baja Kids",
+      "address": "Blvd. Cuauhtémoc Sur 852, Colonia Gabilondo, 22044 Tijuana, B.C.",
+      "phone": "+52 (664) 456-7890",
+      "email": "info@bajakids.com",
+      "image": "images/bajakids-logo.png",
+      "membership": 1,
+      "description": "Safe, indoor entertainment center with trampolines, skill games, and rest areas for parents and kids to spend an incredible weekend during their vacation.",
+      "website": "https://www.bajakids.com",
+      "category": "Family Entertainment"
+    }
+  ]
+}
