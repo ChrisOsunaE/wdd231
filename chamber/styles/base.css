@@ -83,6 +83,7 @@ header{
 }
 
 .hamburger {
+  text-align: right;
   font-size: 1.5rem;
   background: none;
   border: none;
@@ -112,7 +113,7 @@ header{
 footer {
   display: grid;
   grid-template-columns: 1fr auto 1fr;
-  padding: 1rem;
+  padding: 2rem 1rem;
   background-color: var(--tertiary-color);
   color: var(--primary-color);
   border-top: 2px solid rgba(0, 46, 93, 0.1);
@@ -137,8 +138,25 @@ footer .social-links {
 footer .class-info{
   text-align: right;
   font-size: 0.8rem;
-  color: var(--primary-color);
+  /* color: var(--primary-color); */
   align-self: end;
+}
+
+footer .social-links a {
+  width: 24px;
+  height: 24px;
+  text-decoration: none;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+footer .social-links a:hover {
+  transform: scale(1.2);
+}
+
+footer .social-links img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 

@@ -5,7 +5,7 @@
   }
 
   header {
-    grid-template-columns: 48px auto auto;
+    grid-template-columns: 48px  auto;
   }
 
   .hamburger {
