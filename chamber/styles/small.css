@@ -198,3 +198,80 @@ button.active {
   border-radius: 5px;
 }
 
+#directory-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 0.5rem;
+  margin: 2rem 0;
+}
+
+.directory-card {
+  background-color: var(--tertiary-color);
+  border: 1px solid rgba(0, 46, 93, 0.2);
+  border-radius: 5px;
+  padding: 1rem;
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.directory-card img{
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+}
+
+.directory-card h2 {
+  margin: 0.5rem 0;
+  font-size: 1.2rem;
+}
+
+.directory-card p {
+  margin: 0.3rem 0;
+  font-size: 0.9rem;
+}
+
+.directory-card a {
+  color: var(--secondary-color);
+  font-size: 0.8rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.silver-member {
+  border-left: 5px solid silver;
+}
+
+.gold-member {
+  border-left: 5px solid var(--secondary-color);
+}
+
+.silver-member .membership-level {
+  background-color: silver;
+  color: var(--primary-color);
+}
+
+
+.gold-member .membership-level {
+  background-color: var(--secondary-color); /* Tu color naranja/dorado */
+  color: var(--neutral-color); /* Texto claro */
+}
+
+.membership-level {
+  display: inline-block;
+  padding: 0.2rem 0.5rem;
+  background-color: var(--secondary-color);
+  color: var(--neutral-color);
+  border-radius: 10px;
+  position: absolute;
+  top: 0rem;
+  right: .5rem;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  position: relative;
+  margin-bottom: 1rem;
+}

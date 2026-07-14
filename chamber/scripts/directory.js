@@ -42,14 +42,6 @@ const displayDirectory = (companies) => {
         let membershipLevel = document.createElement('p');
         membershipLevel.classList.add('membership-level');
 
-        if (company.membership === '1') {
-            membershipLevel.textContent = 'Member';
-        } else if (company.membership === '2') {
-            membershipLevel.textContent = 'Silver';
-        } else {
-            membershipLevel.textContent = 'Gold';
-        }
-
         logo.src = company.image;
         name.textContent = company.name;
         address.textContent = `Address: ${company.address}`;
@@ -58,8 +50,23 @@ const displayDirectory = (companies) => {
         website.href = company.website;
 
         if (viewMode === 'grid') {
-            card.classList.add('grid-item');
-            card.appendChild(logo);
+            card.classList.add('directory-card');
+            let cardHeader = document.createElement('div');
+            cardHeader.classList.add('card-header');
+            cardHeader.appendChild(logo);
+            
+            if (company.membership === 2) {
+                membershipLevel.textContent = 'Silver';
+                card.classList.add('silver-member');
+                cardHeader.appendChild(membershipLevel);
+            } else if (company.membership === 3) {
+                membershipLevel.textContent = 'Gold';
+                card.classList.add('gold-member');
+                cardHeader.appendChild(membershipLevel);
+            }
+
+            
+            card.appendChild(cardHeader);
         } else {
             card.classList.add('list-item');
         }
@@ -68,7 +75,6 @@ const displayDirectory = (companies) => {
         card.appendChild(address);
         card.appendChild(phone);
         card.appendChild(website);
-        card.appendChild(membershipLevel);
 
         directoryContainer.appendChild(card);
     });
