@@ -70,4 +70,10 @@
     margin: 1rem;
     gap: 1rem;
   }
+
+  .list-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr auto auto; /* Aquí sí usamos las 4 columnas */
+    align-items: center;
+  }
 }
