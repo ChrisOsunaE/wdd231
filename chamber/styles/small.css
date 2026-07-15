@@ -230,8 +230,19 @@ button.active {
   font-size: 0.9rem;
 }
 
+.directory-card button {
+  background-color: var(--secondary-color);
+  color: var(--neutral-color);
+  border: none;
+  padding: 0.3rem 0.6rem;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
 .directory-card a {
-  color: var(--secondary-color);
+  color: var(--neutral-color);
   font-size: 0.8rem;
   text-decoration: none;
   transition: color 0.3s ease;
@@ -274,4 +285,62 @@ button.active {
   gap: 1rem;
   position: relative;
   margin-bottom: 1rem;
+}
+
+.list-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background-color: var(--tertiary-color);
+  border: 1px solid rgba(0, 46, 93, 0.2);
+  border-radius: 5px;
+  padding: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#directory-container.list-view {
+  display: flex;
+  flex-direction: column;
+  gap: 0; 
+}
+
+.list-item {
+  display: grid;
+  grid-template-columns: 1fr 1fr auto auto;
+  gap: 0.5rem;
+  background-color: var(--tertiary-color);
+  border-radius: 0;
+  padding: 1rem;
+}
+
+.list-item + .list-item {
+  border-top: none;
+}
+
+#directory-container.list-view h2 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+#directory-container.list-view p {
+  margin: 0;
+  font-size: 0.8rem;
+}
+
+#directory-container.list-view button {
+  background-color: var(--secondary-color);
+  color: var(--neutral-color);
+  border: none;
+  padding: 0.2rem 0.4rem;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 0.5rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#directory-container.list-view a {
+  color: var(--neutral-color);
+  font-size: 0.7rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
