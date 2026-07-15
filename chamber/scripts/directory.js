@@ -27,7 +27,7 @@ async function getDirectoryData() {
     const response = await fetch(path);
     try {
         const data = await response.json();
-        console.table(data);
+        // console.table(data);
         directoryData = data.companies;
         displayDirectory(directoryData);
     } catch (error) {
