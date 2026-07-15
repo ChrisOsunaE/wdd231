@@ -192,7 +192,8 @@ section.directory-header {
 
 button.active {
   background-color: var(--secondary-color);
-  color: var(--neutral-color);
+  color: var(--primary-color);
+  font-weight: 700;
   border-radius: 5px;
 }
 
@@ -241,7 +242,7 @@ button.active {
 }
 
 .directory-card a {
-  color: var(--neutral-color);
+  color: var(--primary-color);
   font-size: 0.8rem;
   text-decoration: none;
   transition: color 0.3s ease;
@@ -263,14 +264,14 @@ button.active {
 
 .gold-member .membership-level {
   background-color: var(--secondary-color); /* Tu color naranja/dorado */
-  color: var(--neutral-color); /* Texto claro */
+  color: var(--primary-color); /* Texto claro */
 }
 
 .membership-level {
   display: inline-block;
   padding: 0.2rem 0.5rem;
   background-color: var(--secondary-color);
-  color: var(--neutral-color);
+  color: var(--primary-color);
   border-radius: 10px;
   position: absolute;
   top: 0rem;
@@ -321,7 +322,6 @@ button.active {
 
 #directory-container.list-view button {
   background-color: var(--secondary-color);
-  color: var(--neutral-color);
   border: none;
   padding: 0.2rem 0.4rem;
   border-radius: 5px;
@@ -331,7 +331,8 @@ button.active {
 }
 
 #directory-container.list-view a {
-  color: var(--neutral-color);
+  color: var(--primary-color);
+  font-weight: 600;
   font-size: 0.7rem;
   text-decoration: none;
   transition: color 0.3s ease;

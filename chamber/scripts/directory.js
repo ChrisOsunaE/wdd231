@@ -49,6 +49,8 @@ const displayDirectory = (companies) => {
         let visitWebsite = document.createElement('button');
 
         logo.src = company.image;
+        logo.alt = `${company.name} Logo`;
+        logo.loading = 'lazy';
         name.textContent = company.name;
         address.innerHTML = `📍 ${company.address}`;
         phone.innerHTML = `📞 ${company.phone}`;
