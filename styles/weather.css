@@ -1,0 +1,75 @@
+/* colors */
+:root {
+  --primary-color: #0f172a;
+  --secondary-color: #388df8;
+  --tertiary-color: #94a3b8;
+  --neutral-color: #f8fafc;
+}
+
+body{
+  background-color: var(--primary-color);
+}
+
+h1, h2, h3, h4, h5, h6{
+  color: var(--neutral-color);
+  text-align: center;
+}
+main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  border: .5px solid var(--tertiary-color);
+  border-radius: 5px;
+  text-align: center;
+  max-width: fit-content;
+  background: radial-gradient(circle at top right, var(--secondary-color) 5%, var(--primary-color) 70%);
+}
+
+.card p{
+  color: var(--neutral-color);
+  font-size: 1.25rem;
+  margin: 1rem 2rem;
+  text-align: center;
+}
+
+.card figure {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card #weather-icon{
+  width: 150px;
+  height: 150px;
+  margin: 0;
+}
+
+.card figcaption {
+  color: var(--neutral-color);
+  font-size: 1.25rem;
+  text-transform: capitalize;
+  border-top: .5px solid var(--tertiary-color);
+  width: 100%;
+  padding: 1rem;
+  box-sizing: border-box;
+  background-color: rgba(15, 23, 42, 0.4);
+}
+
+.card #current-temp{
+  font-size: 3rem;
+  font-weight: bold;
+  color: var(--neutral-color);
+}
+
+footer{
+  text-align: center;
+  height: 3rem;
+  line-height: 3rem;
+  background-color: var(--tertiary-color);
+  color: var(--primary-color);
+  margin-top: 1rem;
+}
