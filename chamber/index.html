@@ -8,22 +8,23 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Chamber Directory - Discover and connect with trusted local businesses driving prosperity in the Tijuana, Baja California region.">
-  <meta name="title" content="Directory">
+  <meta name="title" content="Home - Tijuana Chamber of Commerce">
   <meta name="author" content="Christopher Osuna">
 
   <script src="scripts/navigation.js" defer></script>
   <script src="scripts/timestamp.js" defer></script>
+  <script src="scripts/weather.js" defer></script>
 
   <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="styles/small.css">
   <link rel="stylesheet" href="styles/larger.css">
   <link rel="icon" href="favicon.ico">
   
-  <meta property="og:title" content="Chamber Tijuana">
+  <meta property="og:title" content="Home - Tijuana Chamber of Commerce">
   <meta property="og:description" content="Chamber Directory - Discover and connect with trusted local businesses driving prosperity in the Tijuana, Baja California region.">
   <meta property="og:image" content="https://chrisosunae.github.io/wdd231/chamber/images/og-tijuana.webp">
   <meta property="og:url" content="https://chrisosunae.github.io/wdd231/chamber/home.html">
-  <title>Home</title>
+  <title>Home - Tijuana Chamber of Commerce</title>
 </head>
 <body>
   <header>
@@ -39,9 +40,50 @@
     <button id="nav-button" class="hamburger" aria-label="Toggle navigation"></button>
   </header>
   <main>
-    <section>
-      <h1>Home</h1>
-      <p>Welcome to the Tijuana Chamber of Commerce!</p>
+    <section class="hero">
+      <img src="images/hero-tijuana.webp" alt="Tijuana Cityscape" class="hero-img">
+      
+      <div class="hero-content">
+        <h1>Driving Prosperity in the Heart of Tijuana</h1>
+        <p>Empowering local enterprises and fostering a thriving civic ecosystem through advocacy, education, and community connection.</p>
+        <button>Learn More</button>
+      </div>
+
+      <div class="card weather-card">
+        <figure>
+          <img id="weather-icon" src="" alt="Weather Icon">
+          
+          <div class="weather-details">
+            <p>Current Weather</p>
+            <span id="current-temp"></span>
+            <figcaption></figcaption>
+          </div>
+        </figure>
+      </div>
+    </section>
+    <!-- upcoming event(s) section  -->
+    <section class="current-events">
+      <div class="current-events-header">
+        <h2>Current Events</h2>
+        <a href="directory.html" class="view-all">View All Companies</a>
+      </div>
+      <ul>
+        <li><strong>Annual Business Expo:</strong> Join us for our annual business expo on June 15th, 2024, at the Tijuana Convention Center. Network with local businesses and discover new opportunities.</li>
+        <li><strong>Monthly Networking Mixer:</strong> Our next networking mixer will be held on July 10th, 2024, at the Tijuana Chamber headquarters. Connect with fellow business owners and professionals.</li>
+      </ul>
+    </section>
+    
+    <!-- containing two or three company spotlight sections -->
+    <section class="company-spotlight">
+      <h2>Company Spotlight</h2>
+      <div class="spotlight">
+        <h3>Spotlight Company 1</h3>
+        <p>Description of the first spotlighted company, highlighting its achievements and contributions to the local business community.</p>
+      </div>
+      <div class="spotlight">
+        <h3>Spotlight Company 2</h3>
+        <p>Description of the second spotlighted company, showcasing its innovative products or services and its impact on the Tijuana business landscape.</p>
+      </div>
     </section>
   </main>
   
