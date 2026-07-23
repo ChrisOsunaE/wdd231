@@ -409,57 +409,83 @@ button.active {
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
-.weather-card {
-  position: absolute;
-  bottom: 1.5rem;
-  right: 1.5rem;
-  z-index: 2;
-  background-color: rgba(0, 46, 93, 0.8);
-  padding: 1rem 1.5rem;
+/* Weather and forecast */
+.weather-section {
+  padding: 2rem 1rem;
+  background-color: var(--neutral-color);
+}
+
+.weather-section h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+}
+
+.weather-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 0.5rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.current-weather, .forecast {
+  background-color: var(--tertiary-color);
+  border: 1px solid rgba(0, 46, 93, 0.1);
   border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.current-weather h3, .forecast h3 {
+  margin-top: 0;
+  border-bottom: 2px solid var(--secondary-color);
+  padding-bottom: 0.5rem;
   text-align: center;
 }
 
-
-.weather-card figure {
+.current-weather figure {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
-  margin: 0; 
+  justify-content: center;
+  gap: 1rem;
+  margin: 0;
 }
 
-.weather-card img {
+.current-weather img {
   width: 80px;
   height: 80px;
 }
 
-.weather-details {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start; 
-}
-
-.weather-details p {
-  margin: 0;
-  font-size: 0.8rem;
-  color: var(--neutral-color);
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
 .weather-details span {
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-weight: bold;
-  color: var(--neutral-color);
-  margin: 0.2rem 0;
+  color: var(--primary-color);
+  display: block;
 }
 
 .weather-details figcaption {
-  font-size: 1rem;
-  color: var(--neutral-color);
   text-transform: capitalize;
+  color: var(--primary-color);
+}
+
+#forecast-container {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.forecast-item p {
+  margin: 0.2rem 0;
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+.forecast-item img {
+  width: 60px;
+  height: 60px;
 }
 
 /* upcoming events */
