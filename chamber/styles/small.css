@@ -446,8 +446,9 @@ button.active {
   text-align: center;
 }
 
-.current-weather figure {
+.current-weather-figure {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 1rem;
@@ -466,7 +467,7 @@ button.active {
   display: block;
 }
 
-.weather-details figcaption {
+.current-weather-figcaption{
   text-transform: capitalize;
   color: var(--primary-color);
 }
@@ -475,7 +476,7 @@ button.active {
   display: flex;
   justify-content: space-between;
   text-align: center;
-  margin-top: 1rem;
+  margin-top: 3rem;
 }
 
 .forecast-item p {
