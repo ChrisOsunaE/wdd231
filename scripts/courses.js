@@ -80,6 +80,7 @@ const courses = [
 
 const courseContainer = document.getElementById('course-container');
 const totalCreditsElement = document.getElementById('total-credits');
+const courseDetails = document.getElementById('course-details');
 
 const allBtn = document.getElementById('all-btn');
 const cseBtn = document.getElementById('cse-btn');
@@ -106,8 +107,32 @@ function displayCourses(courseList) {
         techList.appendChild(techItem);
       });
       courseCard.appendChild(techList);
+      
+      courseCard.addEventListener('click', () => {
+        displayCourseDetails(course);
+      });
+
       courseContainer.appendChild(courseCard);
     });
+}
+
+function displayCourseDetails(course) {
+  courseDetails.innerHTML = `
+    <button id="closeModal">❌</button>
+    <h2>${course.subject} ${course.number}</h2>
+    <h3>${course.title}</h3>
+    <p><strong>Credits</strong>: ${course.credits}</p>
+    <p><strong>Certificate</strong>: ${course.certificate}</p>
+    <p>${course.description}</p>
+    <p><strong>Technologies</strong>: ${course.technology.join(', ')}</p>
+  `;
+  
+  courseDetails.showModal();
+  
+  const closeModal = document.getElementById("closeModal");
+  closeModal.addEventListener("click", () => {
+    courseDetails.close();
+  });
 }
 
 function calculateTotalCredits(courseList) {
