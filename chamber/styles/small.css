@@ -582,3 +582,69 @@ button.active {
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
+/* current events */
+.current-events {
+  padding: 2rem 1rem;
+  background-color: var(--neutral-color);
+}
+
+.current-events-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+.current-events-header h2 {
+  font-size: 1.8rem;
+  color: var(--primary-color);
+}
+
+.events-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.event-card {
+  background-color: var(--tertiary-color);
+  border: 1px solid rgba(0, 46, 93, 0.2);
+  border-radius: 5px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-left: 5px solid var(--secondary-color);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* call to action */
+.call-to-action {
+  padding: 5rem 1rem;
+  background-color: var(--primary-color);
+  text-align: center;
+}
+
+.call-to-action h2 {
+  color: var(--neutral-color);
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.call-to-action p {
+  color: var(--neutral-color);
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+.cta-button {
+  background-color: var(--secondary-color);
+  color: var(--neutral-color);
+  padding: 0.8rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.cta-button:hover {
+  background-color: var(--neutral-color);
+  color: var(--primary-color);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
