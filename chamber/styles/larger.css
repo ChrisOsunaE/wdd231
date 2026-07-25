@@ -76,4 +76,10 @@
     grid-template-columns: 1fr 1fr auto auto; /* Aquí sí usamos las 4 columnas */
     align-items: center;
   }
+
+  .weather-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 0.5rem;
+}
 }

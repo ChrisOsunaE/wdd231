@@ -55,6 +55,7 @@ header{
 .nav-menu.show {
   display: block;
   position: absolute;
+  z-index: 999;
   top: 100%;
   right: 0;
   background-color: var(--neutral-color);
@@ -198,7 +199,8 @@ button.active {
   border-radius: 5px;
 }
 
-#directory-container {
+#directory-container,
+#spotlight-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 0.5rem;
@@ -423,7 +425,7 @@ button.active {
 
 .weather-wrapper {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr;
   gap: 0.5rem;
   max-width: 800px;
   margin: 0 auto;
@@ -489,29 +491,94 @@ button.active {
 }
 
 /* upcoming events */
-.current-events {
-  background-color: var(--dark-color);
-  margin: 0;
-  padding: 0rem;
+
+
+
+/* --- NUEVA SECCIÓN SPOTLIGHT --- */
+.company-spotlight {
+  padding: 3rem 1rem;
+  background-color: var(--neutral-color);
+  text-align: center;
 }
 
-.current-events-header {
+.company-spotlight h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+#spotlight-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin: 0 auto;
+}
+
+.spotlight-card {
+  position: relative;
+  background-color: var(--tertiary-color);
+  border-radius: 8px;
+  padding: 2.5rem 1.5rem 1.5rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
-  padding: 2rem 2rem 0 2rem;
-  background-color: var(--dark-color);
-}
-.current-events h2 {
-  color: var(--secondary-color);
-  font-size: 1.5rem;
-  text-align: left;
-  margin: 0;
+  justify-content: space-between;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.current-events a {
-  color: var(--secondary-color);
-  text-decoration: none;
-  font-size: 0.9rem;
-  margin-left: 2rem;
+.spotlight-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
+
+.spotlight-logo {
+  object-fit: contain;
+  width: 100px;
+  height: 100px;
+  margin-bottom: 1rem;
+}
+
+.spotlight-title {
+  color: var(--primary-color);
+  font-size: 1.3rem;
+  margin: 0 0 1rem 0;
+}
+
+.spotlight-info {
+  width: 100%;
+  margin-bottom: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(0, 46, 93, 0.1);
+}
+
+.spotlight-info p {
+  margin: 0.4rem 0;
+  font-size: 0.9rem;
+  color: var(--dark-color);
+}
+
+.spotlight-btn {
+  display: inline-block;
+  background-color: var(--primary-color);
+  color: var(--neutral-color) !important;
+  padding: 0.6rem 1.5rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+  width: 100%;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.spotlight-btn:hover {
+  background-color: var(--secondary-color);
+}
+
+.spotlight-card .membership-level {
+  font-size: 0.75rem;
+  top: 1rem;
+  right: 1rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+

@@ -14,6 +14,7 @@
   <script src="scripts/navigation.js" defer></script>
   <script src="scripts/timestamp.js" defer></script>
   <script src="scripts/weather.js" defer></script>
+  <script src="scripts/spotlight.js" defer></script>
 
   <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="styles/small.css">
@@ -56,7 +57,7 @@
         <h2>Current Events</h2>
         <a href="directory.html" class="view-all">View All Companies</a>
       </div>
-      <ul>
+      <ul class="event-list">
         <li><strong>Annual Business Expo:</strong> Join us for our annual business expo on June 15th, 2024, at the Tijuana Convention Center. Network with local businesses and discover new opportunities.</li>
         <li><strong>Monthly Networking Mixer:</strong> Our next networking mixer will be held on July 10th, 2024, at the Tijuana Chamber headquarters. Connect with fellow business owners and professionals.</li>
       </ul>
@@ -86,16 +87,9 @@
     </section>
 
     
-    <!-- containing two or three company spotlight sections -->
     <section class="company-spotlight">
       <h2>Company Spotlight</h2>
-      <div class="spotlight">
-        <h3>Spotlight Company 1</h3>
-        <p>Description of the first spotlighted company, highlighting its achievements and contributions to the local business community.</p>
-      </div>
-      <div class="spotlight">
-        <h3>Spotlight Company 2</h3>
-        <p>Description of the second spotlighted company, showcasing its innovative products or services and its impact on the Tijuana business landscape.</p>
+      <div id="spotlight-container">
       </div>
     </section>
   </main>
