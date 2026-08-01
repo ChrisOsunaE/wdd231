@@ -743,6 +743,18 @@ button.active {
   grid-template-columns: 1fr;
   gap: 1rem;
 }
+
+@keyframes fadeSlideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .membership-card{
   background-color: var(--tertiary-color);
   border: 1px solid rgba(0, 46, 93, 0.2);
@@ -755,7 +767,14 @@ button.active {
   justify-content: center;
   align-items: center;
   gap: 1rem;
+  opacity: 0;
+  animation: fadeSlideIn 0.6s ease-out forwards;
 }
+
+.membership-card:nth-child(1) { animation-delay: 0.1s; }
+.membership-card:nth-child(2) { animation-delay: 0.3s; }
+.membership-card:nth-child(3) { animation-delay: 0.5s; }
+.membership-card:nth-child(4) { animation-delay: 0.7s; }
 
 .membership-card-actions button {
   background-color: var(--primary-color);
@@ -820,4 +839,125 @@ dialog::backdrop {
 #modal-title {
   margin-top: 0;
   color: var(--primary-color);
+}
+
+/* Thank You */
+
+.thankyou-section {
+  padding: 5rem 1rem;
+  text-align: center;
+}
+
+.thankyou-section p {
+  font-size: 1.2rem;
+  color: var(--primary-color);
+  padding: 0 9rem;
+}
+
+.submission-summary-section {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1rem;
+}
+
+.summary, .record-details {
+  background-color: var(--tertiary-color);
+  border: 1px solid rgba(0, 46, 93, 0.2);
+  border-radius: 5px;
+  padding: 1rem;
+  text-align: left;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.results-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.data-item {
+  margin-bottom: 1.2rem;
+}
+
+.data-label {
+  display: block;
+  font-weight: 700;
+  font-size: 0.85rem;
+  color: var(--primary-color);
+  text-transform: uppercase;
+  margin-bottom: 0.2rem;
+}
+
+.data-value {
+  display: block;
+  font-size: 1.1rem;
+  color: #333333;
+}
+
+
+.data-value.pending {
+  color: #cd7f32; 
+  font-weight: 500;
+}
+
+.record-details p {
+  font-size: .8rem;
+  color: gray;
+}
+
+.summary.gold-member {
+  border-left: 5px solid var(--secondary-color);
+}
+
+.summary.silver-member {
+  border-left: 5px solid silver;
+}
+
+.summary.bronze-member {
+  border-left: 5px solid #cd7f32; 
+}
+
+.summary.non-membership {
+  border-left: 5px solid var(--primary-color);
+}
+
+.next-steps-section {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  background-color: var(--primary-color);
+  padding: 1rem 2rem;
+  margin: 2rem 0;
+  border-radius: 15px;
+  color: var(--neutral-color);
+}
+
+.next-steps-section h2 {
+  color: var(--neutral-color);
+}
+
+.next-steps-section p {
+  color: var(--neutral-color);
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.next-steps-section button {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  padding: 0.8rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.next-steps-section button:hover {
+  background-color: var(--neutral-color);
+  color: var(--primary-color);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }

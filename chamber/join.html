@@ -45,22 +45,22 @@
       <p>Join the Tijuana Chamber of Commerce and connect with a network of industry leaders, gain exclusive access to resources, and grow your regional influence.</p>
     </section>
     <section class="form-section">
-      <form id="join-form" action="https://formspree.io/f/mnqvydqk" method="POST">
+      <form id="join-form" action="thankyou.html" method="GET">
         <div class="form-row">
           <div class="form-column">
             <label for="first-name">First Name*</label>
-            <input type="text" id="first-name" name="first-name" required placeholder="e.g., Alex">
-          </div>
+            <input type="text" id="first-name" name="first-name" required autofocus autocomplete="given-name" title="Enter your first name" placeholder="e.g., Alex">          </div>
           <div class="form-column">
             <label for="last-name">Last Name*</label>
-            <input type="text" id="last-name" name="last-name" required placeholder="e.g., Smith">
+            <input type="text" id="last-name" name="last-name" required autocomplete="family-name" title="Enter your last name" placeholder="e.g., Smith">
           </div>
         </div>
         <label for="organizational-title">Organizational Title</label>
         <input type="text" id="organizational-title" name="organizational-title" placeholder="e.g., CEO, Manager">
+
         
         <label for="email">Email*</label>
-        <input type="email" id="email" name="_replyto" required placeholder="e.g., alex.smith@example.com">
+        <input type="email" id="email" name="email" required placeholder="e.g., alex.smith@example.com">
         <div class="form-row">
           <div class="form-column">
             <label for="address">Address</label>
@@ -68,12 +68,12 @@
           </div>
           <div class="form-column">
             <label for="phone">Mobile Phone*</label>
-            <input type="tel" id="phone" name="phone" required placeholder="e.g., +52...">
+            <input type="tel" id="phone" name="phone" required autocomplete="tel" title="Enter your mobile phone number" placeholder="e.g., +52...">
           </div>
         </div>
 
         <label for="business">Business Name:</label>
-        <input type="text" id="business" name="business" required placeholder="Company Legal Name">
+        <input type="text" id="business" name="business" required autocomplete="organization" title="Enter your business or organization name" placeholder="Company Legal Name">
 
         <label for="membership-level">Membership Level*</label>
         <select id="membership-level" name="membership-level" required>
@@ -86,6 +86,7 @@
 
         <label for="bussiness-description">Business Description</label>
         <textarea id="bussiness-description" name="bussiness-description" rows="4" placeholder="Briefly describe your company's mission and industry focus..."></textarea>
+        <input type="hidden" id="timestamp" name="timestamp" value="">
         
         <button type="submit">Apply for Membership</button>
       </form>

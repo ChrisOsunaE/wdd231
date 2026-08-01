@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Chamber Directory">
+  <meta name="title" content="Chamber Directory">
+  <meta name="author" content="Christopher Osuna">
+
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/timestamp.js" defer></script>
+  <script src="scripts/thankyou.js" defer></script>
+
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+  <link rel="icon" href="favicon.ico">
+
+  <meta property="og:title" content="Chamber Tijuana">
+  <meta property="og:description" content="Chamber Directory - Discover and connect with trusted local businesses driving prosperity in the Tijuana, Baja California region.">
+  <meta property="og:image" content="https://chrisosunae.github.io/wdd231/chamber/images/og-tijuana.webp">
+  <meta property="og:url" content="https://chrisosunae.github.io/wdd231/chamber/join.html">
+  <title>Join</title>
+</head>
+<body>
+  <header>
+    <span class="title">Tijuana Chamber</span>
+    <nav id="nav-bar" class="nav-menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li><a href="discover.html">Discover</a></li>
+      </ul>
+    </nav>
+    <button id="nav-button" class="hamburger" aria-label="Toggle navigation"></button>
+  </header>
+  <main>
+    <section class="thankyou-section">
+      <img src="images/check-circle.svg" alt="Thank You" class="thankyou-image">
+      <h1>Thank You for Joining Us!</h1>
+      <p>Your application to the Tijuana Chamber of Commerce has been successfully submitted. We are excited to review your information and welcome you to our community.</p>
+    </section>
+
+    <section class="submission-summary-section">
+      <div class="summary">
+        <h2>Submission Summary</h2>
+        <div id="results" class="results-box"></div>
+      </div>
+      <div class="record-details">
+        <h2>Record Details</h2>
+        <div id="timestamp-result" class="timestamp-results-box"></div>
+        <p>A confirmation receipt has been sent to your registered email if you have provided one.</p>
+      </div>
+    </section>
+
+    <section class="next-steps-section">
+      <div>
+      <h2>Next Steps</h2>
+      <p>Our membership committee will review your application and contact you within 5-7 business days. In the meantime, feel free to explore our website and learn more about the benefits of being a member.</p>
+
+      </div>
+      <div>
+        <button onclick="window.location.href='index.html'">Back to Home</button>
+      </div>
+
+    </section>  
+  </main>
+  
+  <footer>
+    <div class="contact-info">
+      <h3>Tijuana Chamber of Commerce</h3>
+      <p>123 Main Street, Tijuana, Baja California, Mexico</p>
+      <p>info@tijuana-chamber.org</p>
+      <p>+52 664 123 4567</p>
+    </div>
+    <div class="social-links">
+      <a href="https://github.com/ChrisOsunaE" target="_blank" rel="noopener noreferrer">
+        <img src="images/github.svg" alt="GitHub logo" width="1" height="1">
+      </a>
+      <a href="https://www.linkedin.com/in/christopher-osuna/" target="_blank" rel="noopener noreferrer">
+        <img src="images/linkedin.svg" alt="LinkedIn logo" width="1" height="1">
+      </a>
+    </div>
+    <div class="class-info">
+      <p>WDD231 Class Project</p>
+      <p>Christopher Osuna</p>
+      <p>© <span id="currentYear"></span>Tijuana Chamber of Commerce</p>
+      <p id="lastModified"></p>
+    </div>
+  </footer>
+</body>
+</html>
