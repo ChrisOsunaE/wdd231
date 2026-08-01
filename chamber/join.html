@@ -13,6 +13,7 @@
 
   <script src="scripts/navigation.js" defer></script>
   <script src="scripts/timestamp.js" defer></script>
+  <script src="scripts/membership.js" defer></script>
 
   <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="styles/small.css">
@@ -78,6 +79,7 @@
         <select id="membership-level" name="membership-level" required>
           <option value="">Select a level</option>
           <option value="non-profit">Non-Profit</option>
+          <option value="bronze">Bronze</option>
           <option value="silver">Silver</option>
           <option value="gold">Gold</option>
         </select>
@@ -88,35 +90,14 @@
         <button type="submit">Apply for Membership</button>
       </form>
 
-      <div class="membership-cards">
-        <div class="membership-card non-membership">
-          <div class="membership-card-content">
-            <h3>NP Membership</h3>
-            <p>For non-profit instituttions.</p>
-          </div>
-          <div class="membership-card-actions">
-            <button type="button" class="view-benefits">View Benefits</button>
-          </div>
-        </div>
-        <div class="membership-card silver-member">
-          <div class="membership-card-content">
-          <h3>Silver Membership</h3>
-          <p>Growth & networking focus.</p>
-          </div>
-          <div class="membership-card-actions">
-            <button type="button" class="view-benefits">View Benefits</button>
-          </div>  
-        </div>
-        <div class="membership-card gold-member">
-          <div class="membership-card-content">
-          <h3>Gold Membership</h3>
-          <p>Maximum visibility & impact.</p>
-          </div>
-          <div class="membership-card-actions">
-            <button type="button" class="view-benefits">View Benefits</button>
-          </div>
-        </div>
-      </div>
+      <div id="membership-cards-container" class="membership-cards"></div>
+
+      <dialog id="membership-modal">
+        <button id="close-modal" aria-label="Close modal">❌</button>
+        <h2 id="modal-title"></h2>
+        <p id="modal-cost"><strong>Costo:</strong> <span id="modal-cost-val"></span></p>
+        <p id="modal-benefits"></p>
+      </dialog>
     </section>
   </main>
   

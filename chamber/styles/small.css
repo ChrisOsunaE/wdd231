@@ -1,7 +1,7 @@
 /* Colors  */
 :root {
   --primary-color: #1e293b;
-  --secondary-color: #d97706;
+  --secondary-color: #FFD700;
   --tertiary-color: #f1eadf;
   --neutral-color: #fcf9f5;
   --dark-color: #0f172a;
@@ -392,7 +392,7 @@ button.active {
 
 .hero button {
   background-color: var(--secondary-color);
-  color: var(--neutral-color);
+  color: var(--primary-color);
   border: none;
   padding: 0.8rem 2rem;
   font-size: 1.1rem;
@@ -562,7 +562,7 @@ button.active {
 .spotlight-btn {
   display: inline-block;
   background-color: var(--primary-color);
-  color: var(--neutral-color) !important;
+  color: var(--neutral-color);
   padding: 0.6rem 1.5rem;
   font-size: 0.9rem;
   font-weight: 700;
@@ -574,6 +574,7 @@ button.active {
 
 .spotlight-btn:hover {
   background-color: var(--secondary-color);
+  color: var(--primary-color);
 }
 
 .spotlight-card .membership-level {
@@ -635,7 +636,7 @@ button.active {
 }
 .cta-button {
   background-color: var(--secondary-color);
-  color: var(--neutral-color);
+  color: var(--primary-color);
   padding: 0.8rem 2rem;
   font-size: 1.1rem;
   font-weight: 700;
@@ -723,6 +724,20 @@ button.active {
   transition: background-color 0.3s ease, color 0.3s ease
 }
 
+.form-row {
+  display: flex;
+  gap: 1rem; 
+  margin-bottom: 0.5rem;
+}
+
+.form-column {
+  flex: 1; 
+}
+
+.form-column label {
+  margin-bottom: 0.5rem;
+}
+
 .membership-cards{
   display: grid;
   grid-template-columns: 1fr;
@@ -768,4 +783,41 @@ button.active {
 
 .non-membership {
   border-left: 5px solid var(--primary-color);
+}
+
+.bronze-member {
+  border-left: 5px solid #cd7f32; 
+}
+
+dialog {
+  border: 1px solid var(--neutral-color);
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+  max-width: 90%;
+  width: 400px;
+  background-color: var(--tertiary-color);
+  color: #000;
+}
+
+dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+#close-modal {
+  float: right;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: transform 0.2s ease;
+}
+
+#close-modal:hover {
+  transform: scale(1.1);
+}
+
+#modal-title {
+  margin-top: 0;
+  color: var(--primary-color);
 }
