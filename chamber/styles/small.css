@@ -673,7 +673,7 @@ button.active {
 .form-section {
   padding: 2rem 1rem;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: 1fr;
   gap: 2rem;
 }
 
@@ -721,4 +721,51 @@ button.active {
   margin-top: 2rem;
   cursor: pointer;
   transition: background-color 0.3s ease, color 0.3s ease
+}
+
+.membership-cards{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+.membership-card{
+  background-color: var(--tertiary-color);
+  border: 1px solid rgba(0, 46, 93, 0.2);
+  border-radius: 5px;
+  padding: 1rem;
+  text-align: left;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.membership-card-actions button {
+  background-color: var(--primary-color);
+  color: var(--neutral-color);
+  border: none;
+  padding: 0.3rem 0.6rem;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.membership-card-actions button:hover {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+.gold-member {
+  border-left: 5px solid var(--secondary-color);
+}
+
+.silver-member {
+  border-left: 5px solid silver;
+}
+
+.non-membership {
+  border-left: 5px solid var(--primary-color);
 }
