@@ -39,9 +39,85 @@
     <button id="nav-button" class="hamburger" aria-label="Toggle navigation"></button>
   </header>
   <main>
-    <section>
-      <h1>Join</h1>
-      <p>Learn about the benefits of joining the Tijuana Chamber of Commerce and how you can grow your business in the Tijuana, Baja California region.</p>
+    <section class="header-section">
+      <h1>Empower Your Business</h1>
+      <p>Join the Tijuana Chamber of Commerce and connect with a network of industry leaders, gain exclusive access to resources, and grow your regional influence.</p>
+    </section>
+    <section class="form-section">
+      <form id="join-form" action="https://formspree.io/f/mnqvydqk" method="POST">
+        <div class="form-row">
+          <div class="form-column">
+            <label for="first-name">First Name*</label>
+            <input type="text" id="first-name" name="first-name" required placeholder="e.g., Alex">
+          </div>
+          <div class="form-column">
+            <label for="last-name">Last Name*</label>
+            <input type="text" id="last-name" name="last-name" required placeholder="e.g., Smith">
+          </div>
+        </div>
+        <label for="organizational-title">Organizational Title</label>
+        <input type="text" id="organizational-title" name="organizational-title" placeholder="e.g., CEO, Manager">
+        
+        <label for="email">Email*</label>
+        <input type="email" id="email" name="_replyto" required placeholder="e.g., alex.smith@example.com">
+        <div class="form-row">
+          <div class="form-column">
+            <label for="address">Address</label>
+            <input type="text" id="address" name="address" placeholder="e.g., 123 Main St">
+          </div>
+          <div class="form-column">
+            <label for="phone">Mobile Phone*</label>
+            <input type="tel" id="phone" name="phone" required placeholder="e.g., +52...">
+          </div>
+        </div>
+
+        <label for="business">Business Name:</label>
+        <input type="text" id="business" name="business" required placeholder="Company Legal Name">
+
+        <label for="membership-level">Membership Level*</label>
+        <select id="membership-level" name="membership-level" required>
+          <option value="">Select a level</option>
+          <option value="non-profit">Non-Profit</option>
+          <option value="silver">Silver</option>
+          <option value="gold">Gold</option>
+        </select>
+
+        <label for="bussiness-description">Business Description</label>
+        <textarea id="bussiness-description" name="bussiness-description" rows="4" placeholder="Briefly describe your company's mission and industry focus..."></textarea>
+        
+        <button type="submit">Apply for Membership</button>
+      </form>
+
+      <div>
+        <!-- 3 cards for tiers -->
+        <div class="membership-card">
+          <div>
+          <h3>NP Membership</h3>
+          <p>For non-profit instituttions.</p>
+          </div>
+          <div>
+            <button type="button" class="view-benefits">View Benefits</button>
+          </div>
+        </div>
+        <div class="membership-card">
+          <div>
+          <h3>Silver Membership</h3>
+          <p>Growth & networking focus.</p>
+          </div>
+          <div>
+            <button type="button" class="view-benefits">View Benefits</button>
+          </div>  
+        </div>
+        <div class="membership-card">
+          <div>
+          <h3>Gold Membership</h3>
+          <p>Maximum visibility & impact.</p>
+          </div>
+          <div>
+            <button type="button" class="view-benefits">View Benefits</button>
+          </div>
+        </div>
+      </div>
     </section>
   </main>
   
