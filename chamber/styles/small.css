@@ -856,7 +856,7 @@ dialog::backdrop {
 
 .submission-summary-section {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 1fr;
   gap: 1rem;
 }
 
@@ -923,10 +923,10 @@ dialog::backdrop {
 
 .next-steps-section {
   display: grid;
-  grid-template-columns: 3fr 1fr;
+  grid-template-columns: 1fr;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
+  gap: 1rem;
   background-color: var(--primary-color);
   padding: 1rem 2rem;
   margin: 2rem 0;
