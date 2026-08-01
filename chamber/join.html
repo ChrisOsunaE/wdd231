@@ -45,26 +45,28 @@
       <p>Join the Tijuana Chamber of Commerce and connect with a network of industry leaders, gain exclusive access to resources, and grow your regional influence.</p>
     </section>
     <section class="form-section">
-      <form id="join-form" action="thankyou.html" method="GET">
+      <form id="join-form" action="thankyou.html" method="get">
         <div class="form-row">
           <div class="form-column">
             <label for="first-name">First Name*</label>
-            <input type="text" id="first-name" name="first-name" required autofocus autocomplete="given-name" title="Enter your first name" placeholder="e.g., Alex">          </div>
+            <input type="text" id="first-name" name="first-name" required autofocus autocomplete="given-name" title="Enter your first name" placeholder="e.g., Alex">
+          </div>
           <div class="form-column">
             <label for="last-name">Last Name*</label>
             <input type="text" id="last-name" name="last-name" required autocomplete="family-name" title="Enter your last name" placeholder="e.g., Smith">
           </div>
         </div>
-        <label for="organizational-title">Organizational Title</label>
-        <input type="text" id="organizational-title" name="organizational-title" placeholder="e.g., CEO, Manager">
-
         
+        <label for="organizational-title">Organizational Title</label>
+        <input type="text" id="organizational-title" name="organizational-title" autocomplete="organization-title" pattern="[A-Za-z\ \-]{7,}" title="At least 7 letters, spaces, or hyphens" placeholder="e.g., CEO, Manager">
+
         <label for="email">Email*</label>
-        <input type="email" id="email" name="email" required placeholder="e.g., alex.smith@example.com">
+        <input type="email" id="email" name="email" required autocomplete="email" title="Enter a valid email address" placeholder="e.g., alex.smith@example.com">
+        
         <div class="form-row">
           <div class="form-column">
             <label for="address">Address</label>
-            <input type="text" id="address" name="address" placeholder="e.g., 123 Main St">
+            <input type="text" id="address" name="address" autocomplete="street-address" title="Enter your address" placeholder="e.g., 123 Main St">
           </div>
           <div class="form-column">
             <label for="phone">Mobile Phone*</label>
@@ -72,20 +74,21 @@
           </div>
         </div>
 
-        <label for="business">Business Name:</label>
+        <label for="business">Business Name*</label>
         <input type="text" id="business" name="business" required autocomplete="organization" title="Enter your business or organization name" placeholder="Company Legal Name">
 
         <label for="membership-level">Membership Level*</label>
-        <select id="membership-level" name="membership-level" required>
+        <select id="membership-level" name="membership-level" required title="Select a membership level">
           <option value="">Select a level</option>
-          <option value="non-profit">Non-Profit</option>
+          <option value="np">Non-Profit</option>
           <option value="bronze">Bronze</option>
           <option value="silver">Silver</option>
           <option value="gold">Gold</option>
         </select>
 
         <label for="bussiness-description">Business Description</label>
-        <textarea id="bussiness-description" name="bussiness-description" rows="4" placeholder="Briefly describe your company's mission and industry focus..."></textarea>
+        <textarea id="bussiness-description" name="bussiness-description" rows="4" title="Enter business description" placeholder="Briefly describe your company's mission and industry focus..."></textarea>
+        
         <input type="hidden" id="timestamp" name="timestamp" value="">
         
         <button type="submit">Apply for Membership</button>
