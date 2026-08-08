@@ -30,24 +30,26 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const gridBox = document.getElementById("discover-container");
 
-    places.forEach(function(item) {
-        let newCard = document.createElement("div");
-        newCard.className = "discover-card"; 
+    places.forEach((place, index) => {
+      let newCard = document.createElement("div");
+      newCard.className = "discover-card"; 
 
-        let cardHTML = `
-            <figure>
-                <img src="${item.image}" alt="${item.name}" width="300" height="200" loading="lazy">
-            </figure>
-            <div class="card-content">
-                <h2>${item.name}</h2>
-                <address>${item.address}</address>
-                <p>${item.description}</p>
-                <button>Learn more</button>
-            </div>
-        `;
-        
-        newCard.innerHTML = cardHTML;
-        gridBox.appendChild(newCard);
-    });
+      let loadingAttr = index === 0 ? 'fetchpriority="high"' : 'loading="lazy"';
+
+      let cardHTML = `
+          <figure>
+              <img src="${place.image}" alt="${place.name}" width="300" height="200" ${loadingAttr}>
+          </figure>
+          <div class="card-content">
+              <h2>${place.name}</h2>
+              <address>${place.address}</address>
+              <p>${place.description}</p>
+              <button>Learn more</button>
+          </div>
+      `;
+      
+      newCard.innerHTML = cardHTML;
+      gridBox.appendChild(newCard);
+  });
 
 });
