@@ -7,22 +7,18 @@
   
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Chamber Directory">
-  <meta name="title" content="Chamber Directory">
+  <meta name="description" content="Discover the beauty, culture, and business opportunities in Tijuana, Baja California. Explore top attractions and demographics.">
+  <meta name="title" content="Discover | Tijuana Chamber of Commerce">
   <meta name="author" content="Christopher Osuna">
 
   <script src="scripts/navigation.js" defer></script>
-  <script src="scripts/timestamp.js" defer></script>
+  <script src="scripts/discover.js" type="module" defer></script>
 
   <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="styles/small.css">
   <link rel="stylesheet" href="styles/larger.css">
   <link rel="icon" href="favicon.ico">
 
-  <meta property="og:title" content="Chamber Tijuana">
-  <meta property="og:description" content="Chamber Directory - Discover and connect with trusted local businesses driving prosperity in the Tijuana, Baja California region.">
-  <meta property="og:image" content="https://chrisosunae.github.io/wdd231/chamber/images/og-tijuana.webp">
-  <meta property="og:url" content="https://chrisosunae.github.io/wdd231/chamber/discover.html">
   <title>Discover | Tijuana Chamber of Commerce</title>
 </head>
 <body>
@@ -38,11 +34,19 @@
     </nav>
     <button id="nav-button" class="hamburger" aria-label="Toggle navigation"></button>
   </header>
+
   <main>
-    <section>
-      <h1>Discover</h1>
-      <p>Discover and connect with trusted local businesses driving prosperity in the Tijuana, Baja California region.</p>
+    <section class="header-section">
+      <h1>Discover Tijuana</h1>
+      <p>Explore the vibrant culture, economic growth, and iconic locations of our region.</p>
     </section>
+
+    <div class="visitor-message-card">
+      <p id="visit-message">Loading message...</p>
+    </div>
+
+    <div class="discover-grid" id="discover-container">
+    </div>
   </main>
   
   <footer>

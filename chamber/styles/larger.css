@@ -73,7 +73,7 @@
 
   .list-item {
     display: grid;
-    grid-template-columns: 1fr 1fr auto auto; /* Aquí sí usamos las 4 columnas */
+    grid-template-columns: 1fr 1fr auto auto;
     align-items: center;
   }
 
@@ -108,3 +108,84 @@
   }
 }
 
+/* TABLET / MEDIUM - 641px/40rem to 1024px/64rem */
+@media screen and (min-width: 40rem) and (max-width: 64rem) {
+  .visitor-message-card {
+    margin: 2rem 2rem 0 2rem;
+  }
+
+  .discover-grid {
+    padding: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+      "card1 card2"
+      "card3 card3" 
+      "card4 card5"
+      "card6 card7"
+      "card8 card8"; 
+  }
+
+  .discover-card:nth-child(3),
+  .discover-card:nth-child(8) {
+    flex-direction: row;
+    gap: 1.5rem;
+  }
+
+  .discover-card:nth-child(3) figure,
+  .discover-card:nth-child(8) figure {
+    flex: 1;
+    margin: 0;
+    height: auto;
+    min-height: 200px;
+  }
+
+  .discover-card:nth-child(3) .card-content,
+  .discover-card:nth-child(8) .card-content {
+    flex: 1;
+    justify-content: center;
+  }
+}
+
+/* DESKTOP / LARGE - 1025px/64rem and up */
+@media screen and (min-width: 64rem) {
+  .visitor-message-card {
+    max-width: 1200px;
+    margin: 2rem auto 0 auto;
+  }
+
+  .discover-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 
+      "card1 card1 card2 card3"
+      "card4 card5 card5 card6"
+      "card7 card8 card8 card8"; 
+  }
+
+  .discover-card:nth-child(1) { flex-direction: row; gap: 1.5rem; }
+  .discover-card:nth-child(1) figure { flex: 1; margin: 0; height: auto; }
+  .discover-card:nth-child(1) .card-content { flex: 1; justify-content: center;}
+
+  .discover-card:nth-child(5) { flex-direction: row; gap: 1.5rem; }
+  .discover-card:nth-child(5) figure { flex: 1; margin: 0; height: auto; }
+  .discover-card:nth-child(5) .card-content { flex: 1; justify-content: center;}
+
+  .discover-card:nth-child(8) figure { flex: 0 0 40%; }
+
+  .discover-card:nth-child(3) { flex-direction: column; gap: 0; }
+  .discover-card:nth-child(3) figure { margin: 0 0 1rem 0; height: 200px; }
+
+  .discover-card figure {
+    overflow: hidden; 
+  }
+  
+  .discover-card img {
+    transition: transform 0.4s ease, filter 0.4s ease;
+  }
+  
+  .discover-card:hover img {
+    transform: scale(1.08);
+    filter: brightness(1.1);
+  }
+}

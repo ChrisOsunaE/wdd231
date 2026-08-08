@@ -961,3 +961,100 @@ dialog::backdrop {
   transform: translateY(-2px);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
+
+/* Discover */
+.visitor-message-card {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  text-align: center;
+  padding: 1rem;
+  margin: 1.5rem 1rem 0 1rem;
+  border-radius: 5px;
+  font-weight: 700;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.discover-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: 
+    "card1" "card2" "card3" "card4" 
+    "card5" "card6" "card7" "card8";
+  gap: 1.5rem;
+  padding: 1.5rem 1rem 3rem 1rem;
+}
+
+.discover-card {
+  background-color: var(--tertiary-color);
+  border: 1px solid rgba(0, 46, 93, 0.2);
+  border-radius: 8px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.discover-card figure {
+  margin: 0 0 1rem 0;
+  border-radius: 5px;
+  overflow: hidden;
+  height: 200px; 
+}
+
+.discover-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.discover-card h2 {
+  font-size: 1.25rem;
+  margin: 0 0 0.5rem 0;
+}
+
+.discover-card address {
+  font-style: normal;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+.discover-card p {
+  font-size: 0.9rem;
+  flex-grow: 1; 
+  margin-bottom: 1rem;
+}
+
+.discover-card button {
+  background-color: var(--primary-color);
+  color: var(--neutral-color);
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 700;
+  align-self: flex-start;
+  transition: background-color 0.3s ease;
+}
+
+.discover-card button:hover {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+.discover-card:nth-child(1) { grid-area: card1; }
+.discover-card:nth-child(2) { grid-area: card2; }
+.discover-card:nth-child(3) { grid-area: card3; }
+.discover-card:nth-child(4) { grid-area: card4; }
+.discover-card:nth-child(5) { grid-area: card5; }
+.discover-card:nth-child(6) { grid-area: card6; }
+.discover-card:nth-child(7) { grid-area: card7; }
+.discover-card:nth-child(8) { grid-area: card8; }
