@@ -1,22 +1,32 @@
 @media only screen and (min-width: 52rem) {
-  header, main, nav, footer {
+  main {
     max-width: 52rem;
-    margin: 0 auto;
+    margin: 0 auto; 
+    padding: 2rem 0;
   }
 
   header {
     grid-template-columns: 48px  auto;
+    padding: 1rem calc((100% - 52rem) / 2);
+  }
+
+  footer {
+    padding: 2rem calc((100% - 52rem) / 2);
   }
 
   .hamburger {
     display: none;
   }
 
-  .nav-menu {
+  .nav-menu,
+  .nav-menu.show {
     display: flex;
     position: static;
-    justify-content: right;
+    justify-content: flex-end;
     margin: 1rem;
+    background-color: transparent;
+    box-shadow: none;
+    width: auto;
   }
 
   .nav-menu ul {
@@ -45,5 +55,22 @@
     color: var(--primary-color);
     border-bottom-color: var(--secondary-color);
   }
+    
+  /* Footer */
 
+  .footer-top {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .footer-brand {
+    flex: 1; 
+  }
+
+  .footer-links {
+    flex: 1;
+    justify-content: flex-end; 
+    gap: 5rem;
+  }
 }
