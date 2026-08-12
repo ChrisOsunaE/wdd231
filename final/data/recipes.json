@@ -1,0 +1,162 @@
+[
+  {
+    "id": 1,
+    "title": "High-Protein Chicken & Quinoa",
+    "prepTime": "45 mins",
+    "calories": "550 kcal",
+    "category": "Lunch",
+    "image": "images/hero.webp"
+  },
+  {
+    "id": 2,
+    "title": "Overnight Recovery Berry Oats",
+    "prepTime": "10 mins",
+    "calories": "380 kcal",
+    "category": "Breakfast",
+    "image": "images/hero.webp"
+  },
+  {
+    "id": 3,
+    "title": "Roasted Sweet Potato & Black Bean Bowls",
+    "prepTime": "40 mins",
+    "calories": "450 kcal",
+    "category": "Lunch",
+    "image": "images/hero.webp"
+  },
+  {
+    "id": 4,
+    "title": "Turkey Meatballs with Zucchini Noodles",
+    "prepTime": "35 mins",
+    "calories": "420 kcal",
+    "category": "Lunch",
+    "image": "images/hero.webp"
+  },
+  {
+    "id": 5,
+    "title": "Greek Lemon Herb Salmon & Asparagus",
+    "prepTime": "30 mins",
+    "calories": "490 kcal",
+    "category": "Lunch",
+    "image": "images/hero.webp"
+  },
+  {
+    "id": 6,
+    "title": "Peanut Butter Protein Recovery Smoothie",
+    "prepTime": "5 mins",
+    "calories": "410 kcal",
+    "category": "Smoothie",
+    "image": "images/hero.webp"
+  },
+  {
+    "id": 7,
+    "title": "Mediterranean Chickpea Salad Prep",
+    "prepTime": "20 mins",
+    "calories": "350 kcal",
+    "category": "Lunch",
+    "image": "images/hero.webp"
+  },
+  {
+    "id": 8,
+    "title": "Beef and Broccoli Stir-Fry Meal Prep",
+    "prepTime": "30 mins",
+    "calories": "510 kcal",
+    "category": "Lunch",
+    "image": "images/hero.webp"
+  },
+  {
+    "id": 9,
+    "title": "Chia Seed & Almond Milk Pudding",
+    "prepTime": "10 mins",
+    "calories": "280 kcal",
+    "category": "Breakfast",
+    "image": "images/hero.webp"
+  },
+  {
+    "id": 10,
+    "title": "Spiced Lentil and Spinach Soup",
+    "prepTime": "45 mins",
+    "calories": "320 kcal",
+    "category": "Lunch",
+    "image": "images/hero.webp"
+  },
+  {
+    "id": 11,
+    "title": "Tofu and Edamame Power Bowl",
+    "prepTime": "25 mins",
+    "calories": "440 kcal",
+    "category": "Lunch",
+    "image": "images/hero.webp"
+  },
+  {
+    "id": 12,
+    "title": "Green Spinach & Whey Protein Smoothie",
+    "prepTime": "5 mins",
+    "calories": "290 kcal",
+    "category": "Smoothie",
+    "image": "images/hero.webp"
+  },
+  {
+    "id": 13,
+    "title": "Baked Garlic Herb Chicken Breast",
+    "prepTime": "35 mins",
+    "calories": "390 kcal",
+    "category": "Lunch",
+    "image": "images/hero.webp"
+  },
+  {
+    "id": 14,
+    "title": "Roasted Cauliflower & Chickpea Tins",
+    "prepTime": "40 mins",
+    "calories": "360 kcal",
+    "category": "Lunch",
+    "image": "images/hero.webp"
+  },
+  {
+    "id": 15,
+    "title": "Shrimp and Brown Rice Meal Prep",
+    "prepTime": "25 mins",
+    "calories": "410 kcal",
+    "category": "Lunch",
+    "image": "images/hero.webp"
+  },
+  {
+    "id": 16,
+    "title": "Cottage Cheese & Pineapple Bowl",
+    "prepTime": "5 mins",
+    "calories": "250 kcal",
+    "category": "Breakfast",
+    "image": "images/hero.webp"
+  },
+  {
+    "id": 17,
+    "title": "Turkey and Avocado Wrap Prep",
+    "prepTime": "15 mins",
+    "calories": "460 kcal",
+    "category": "Lunch",
+    "image": "images/hero.webp"
+  },
+  {
+    "id": 18,
+    "title": "Chocolate Banana Recovery Shake",
+    "prepTime": "5 mins",
+    "calories": "390 kcal",
+    "category": "Smoothie",
+    "image": "images/hero.webp"
+  },
+  {
+    "id": 19,
+    "title": "Roasted Brussels Sprouts & Bacon Hash",
+    "prepTime": "35 mins",
+    "calories": "430 kcal",
+    "category": "Lunch",
+    "image": "images/hero.webp"
+  },
+  {
+    "id": 20,
+    "title": "Egg White and Spinach Frittata Muffins",
+    "prepTime": "25 mins",
+    "calories": "220 kcal",
+    "category": "Breakfast",
+    "image": "images/hero.webp"
+  }
+]

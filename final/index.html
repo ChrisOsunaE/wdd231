@@ -3,6 +3,7 @@
 <head>
   <script src="scripts/navigation.js" defer></script>
   <script src="scripts/timestamp.js" defer></script>
+  <script src="scripts/featured-recipes.js" defer></script>
 
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -44,20 +45,73 @@
     <button id="nav-button" class="hamburger" aria-label="Toggle navigation"></button>
   </header>
   <main>
-    <!-- <section class="hero">
-      <img src="images/hero.webp" alt="Tasty Food" class="hero-img">
-      
+    <section class="hero">
       <div class="hero-content">
-        <h1>Master your week by batch cooking</h1>
+        <h1>Master your week by batch cooking.</h1>
         <p>Chef-inspired nutritious meals designed for your busy life. Save over 10 hours a week.</p>
-        <button>Learn More</button>
+        <a href="meal-plans.html" class="btn-primary">Explore Meal Plans</a>
       </div>
-    </section> -->
+      <div class="hero-image">
+        <img src="images/hero.webp" alt="Prepared meals in glass containers" class="hero-img">
+      </div>
+    </section>
+
+    <section class="features">
+      <div class="features-grid">
+        
+        <div class="feature-card">
+          <div class="icon-wrapper">
+          <img src="images/clock.svg" alt="Clock Icon" class="feature-icon">
+          </div>
+          <h3>Effortless Prep</h3>
+          <p>Streamlined instructions designed for efficiency. Organize your whole week of office lunches in a single Sunday afternoon session.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="icon-wrapper">
+          <img src="images/heart-plus.svg" alt="Heart with Plus Icon" class="feature-icon">
+          </div>
+          <h3>Nutrient Density</h3>
+          <p>Chef-curated ingredients focused on whole foods, maximizing nutritional value and maintaining quality even when reheated in the microwave.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="icon-wrapper">
+            <img src="images/recycle.svg" alt="Recycle Icon" class="feature-icon">
+          </div>
+          <h3>Zero Waste</h3>
+          <p>Smart shopping lists and ingredient cross-utilization ensure you buy only what you need and use what you buy.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="featured-recipes">
+      <div class="featured-header">
+        <div>
+          <h2>Featured Recipes</h2>
+          <p>A taste of what you could be eating this week.</p>
+        </div>
+        <a href="recipes.html" class="view-all-link">View All &rarr;</a>
+      </div>
+
+      <div id="featured-container" class="featured-grid"></div>
+    </section>
+
+    <section class="newsletter">
+      <div class="newsletter-content">
+        <h2>Weekly Nutrition</h2>
+        <p>Join our community. Get a free batch cooking guide and seasonal recipe inspiration delivered to your inbox every week.</p>
+      </div>
+      
+      <div class="newsletter-form-wrapper">
+        <form action="#" method="get" class="newsletter-form">
+          <input type="email" name="email" placeholder="Your email address" required aria-label="Your email address">
+          <button type="submit" class="btn-subscribe">Subscribe</button>
+        </form>
+        <p class="privacy-note">We respect your inbox. Unsubscribe at any time.</p>
+      </div>
+    </section>
   </main> 
-
-
-
-
   
   <footer>
     <div class="footer-top">
