@@ -95,7 +95,7 @@ function displayCourses(courseList) {
       
       if (course.completed) {
         courseCard.classList.add('completed');
-        courseCard.innerHTML += `<span class="badge">&check; Completed</span>`;
+        courseCard.innerHTML += `<span class="recipe-badge">&check; Completed</span>`;
       }
       
       courseCard.innerHTML += `<p>${course.title}: ${course.description}</p>`;

@@ -19,7 +19,7 @@ async function loadFeaturedRecipes() {
       card.innerHTML = `
         <div class="featured-img-wrapper">
           <img src="${recipe.image}" alt="${recipe.title}" loading="lazy">
-          <span class="badge">${recipe.category}</span>
+          <span class="recipe-badge">${recipe.category}</span>
         </div>
         <div class="featured-info">
           <h3>${recipe.title}</h3>

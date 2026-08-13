@@ -196,7 +196,7 @@ footer {
   color: var(--text);
 }
 
-.btn-primary {
+.main-btn {
   display: inline-block;
   text-decoration: none;
   background-color: var(--primary);
@@ -211,7 +211,7 @@ footer {
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-.btn-primary:hover {
+.main-btn:hover {
   background-color: #1f401b; 
   transform: translateY(-2px);
   color: #ffffff;
@@ -401,7 +401,7 @@ footer {
   object-fit: cover;
 }
 
-.badge {
+.recipe-badge {
   position: absolute;
   top: 1rem;
   left: 1rem;
@@ -548,7 +548,7 @@ footer {
   margin-right: 0.4rem;
 }
 
-.btn-outline {
+.border-btn {
   background-color: transparent;
   color: var(--secondary); 
   border: 1px solid var(--secondary);
@@ -562,7 +562,7 @@ footer {
   font-family: 'Inter', sans-serif;
 }
 
-.btn-outline:hover {
+.border-btn:hover {
   background-color: var(--secondary);
   color: #ffffff;
 }
@@ -584,7 +584,7 @@ footer {
   backdrop-filter: blur(4px);
 }
 
-.modal-content {
+.modal-box {
   padding: 2.5rem;
   position: relative;
 }
@@ -605,7 +605,7 @@ footer {
   color: var(--primary);
 }
 
-.modal-content h2 {
+.modal-box h2 {
   margin-top: 0;
   margin-bottom: 1.5rem;
   font-size: 2rem;
@@ -769,7 +769,7 @@ footer {
   box-sizing: border-box;
 }
 
-.btn-outline-green {
+.border-btn-green {
   display: inline-block;
   text-decoration: none;
   background-color: transparent;
@@ -784,7 +784,7 @@ footer {
   transition: all 0.3s ease;
 }
 
-.btn-outline-green:hover {
+.border-btn-green:hover {
   background-color: var(--primary);
   color: #ffffff;
 }

@@ -31,7 +31,7 @@ async function loadRecipes() {
             <strong>Meal Info</strong>
             <p>Nutrient-dense ${recipe.category.toLowerCase()} designed for optimal batch prep.</p>
           </div>
-          <button class="btn-outline view-recipe-btn">View Recipe</button>
+          <button class="border-btn view-recipe-btn">View Recipe</button>
         </div>
       `;
 
