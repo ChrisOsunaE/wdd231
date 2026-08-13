@@ -35,25 +35,76 @@
     <img src="images/logo.svg" alt="Batch & Balance Logo" class="logo">
     <nav id="nav-bar" class="nav-menu">
       <ul>
-        <li class="current"><a href="index.html">Home</a></li>
+        <li><a href="index.html">Home</a></li>
         <li><a href="recipes.html">Recipes</a></li>
-        <li><a href="meal-plans.html">Meal Plans</a></li>
-        <li><a href="shop.html">Shop</a></li>
+        <li class="current"><a href="meal-plans.html">Meal Plans</a></li>
       </ul>
     </nav>
     <button id="nav-button" class="hamburger" aria-label="Toggle navigation"></button>
   </header>
   <main>
-    <!-- <section class="hero">
-      <img src="images/hero.webp" alt="Tasty Food" class="hero-img">
+    <section class="recipes-header">
+      <h1 class="playfair">Planning & Organization</h1>
+      <p>Master the art of meal prep with smart storage strategies and menu design that nourish your week with order and elegance.</p>
+    </section>
+
+    <section class="bento-grid">
       
-      <div class="hero-content">
-        <h1>Master your week by batch cooking</h1>
-        <p>Chef-inspired nutritious meals designed for your busy life. Save over 10 hours a week.</p>
-        <button>Learn More</button>
+      <article class="bento-card large">
+        <img src="images/hero.webp" alt="Glass containers in fridge" class="card-img" loading="lazy">
+        <div class="card-content">
+          <div class="card-meta">
+            <span>🗄️ Optimal Storage</span>
+          </div>
+          <h2 class="playfair">The Glass Container System</h2>
+          <p>Invest in airtight glass containers. Not only do they preserve flavor better and prevent chemical transfer, but they also provide a clear view of your weekly inventory, reducing waste.</p>
+        </div>
+      </article>
+
+      <article class="bento-card small text-only">
+        <div class="card-content">
+          <span class="icon">🍃</span>
+          <h3 class="playfair">Prolonged Freshness</h3>
+          <p>Wash and completely dry leafy greens before storing them with an absorbent paper towel to extend their shelf life.</p>
+        </div>
+      </article>
+
+      <article class="bento-card small text-only">
+        <div class="card-content">
+          <span class="icon">📅</span>
+          <h3 class="playfair">Menu Structure</h3>
+          <p>Design your week around 3 base proteins, 2 grains, and versatile vegetables that can be recombined to avoid monotony.</p>
+        </div>
+      </article>
+
+    </section>
+
+    <section class="guide-section">
+      <div class="guide-content">
+        <h2 class="playfair">Get Our Weekly Guide</h2>
+        <p>Join our community and receive exclusive planning strategies, menu templates, and nutrition tips directly in your inbox every Sunday.</p>
       </div>
-    </section> -->
-  </main> 
+      
+      <div class="guide-form-wrapper">
+        <form action="thankyou.html" method="get" class="guide-form">
+          <label for="fullName">Full Name</label>
+          <input type="text" id="fullName" name="fullName" placeholder="Your name" required>
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="you@email.com" required>
+
+          <label for="goal">Primary Goal</label>
+          <select id="goal" name="goal">
+            <option value="save-time">Save Time</option>
+            <option value="eat-healthy">Eat Healthy</option>
+            <option value="lose-weight">Lose Weight</option>
+          </select>
+
+          <button type="submit" class="btn-primary">Subscribe to Guide</button>
+        </form>
+      </div>
+    </section>
+  </main>
 
 
 
@@ -68,15 +119,10 @@
       
       <div class="footer-links">
         <div class="link-column">
+          <a href="index.html">Home</a>
           <a href="recipes.html">Recipes</a>
           <a href="meal-plans.html">Meal Plans</a>
-          <a href="shop.html">Shop</a>
         </div>
-        <!-- <div class="link-column">
-          <a href="attributions.html">Attributions</a>
-          <a href="contact.html">Contact</a>
-          <a href="#" target="_blank">Video Demo</a> 
-        </div> -->
       </div>
     </div>
 

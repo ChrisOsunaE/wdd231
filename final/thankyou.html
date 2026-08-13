@@ -3,6 +3,7 @@
 <head>
   <script src="scripts/navigation.js" defer></script>
   <script src="scripts/timestamp.js" defer></script>
+  <script src="scripts/thank-you.js" defer></script>
 
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -43,21 +44,31 @@
     </nav>
     <button id="nav-button" class="hamburger" aria-label="Toggle navigation"></button>
   </header>
-  <main>
-    <!-- <section class="hero">
-      <img src="images/hero.webp" alt="Tasty Food" class="hero-img">
+  <main class="thank-you-main">
+    <div class="thank-you-container">
       
-      <div class="hero-content">
-        <h1>Master your week by batch cooking</h1>
-        <p>Chef-inspired nutritious meals designed for your busy life. Save over 10 hours a week.</p>
-        <button>Learn More</button>
+      <img src="images/hero.webp" alt="Fresh baked bread and salad" class="thank-you-img" loading="lazy">
+      
+      <h1 class="playfair">Thank You, <span id="user-name">[Name]</span>!</h1>
+      
+      <p class="thank-you-desc">
+        Your personalized meal prep guide is on its way to your inbox. While you wait, continue exploring our tools to build your perfect weekly routine.
+      </p>
+      
+      <div class="action-buttons">
+        <a href="recipes.html" class="btn-primary">Explore Recipes</a>
       </div>
-    </section> -->
-  </main> 
+      
+      <div class="confirmation-status">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+          <polyline points="22 4 12 14.01 9 11.01"></polyline>
+        </svg>
+        <span>Subscription confirmed</span>
+      </div>
 
-
-
-
+    </div>
+  </main>
   
   <footer>
     <div class="footer-top">
@@ -68,15 +79,10 @@
       
       <div class="footer-links">
         <div class="link-column">
+          <a href="index.html">Home</a>
           <a href="recipes.html">Recipes</a>
           <a href="meal-plans.html">Meal Plans</a>
-          <a href="shop.html">Shop</a>
         </div>
-        <!-- <div class="link-column">
-          <a href="attributions.html">Attributions</a>
-          <a href="contact.html">Contact</a>
-          <a href="#" target="_blank">Video Demo</a> 
-        </div> -->
       </div>
     </div>
 

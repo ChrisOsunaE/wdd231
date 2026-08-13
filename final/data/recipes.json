@@ -5,7 +5,9 @@
     "prepTime": "45 mins",
     "calories": "550 kcal",
     "category": "Lunch",
-    "image": "images/hero.webp"
+    "image": "images/hero.webp",
+    "ingredients": ["1 Chicken breast", "1/2 cup Quinoa", "1 cup Broccoli", "Olive oil"],
+    "process": "Cook the quinoa according to package instructions. Season chicken breast and grill until fully cooked. Steam broccoli. Divide into meal prep containers."
   },
   {
     "id": 2,
@@ -13,7 +15,9 @@
     "prepTime": "10 mins",
     "calories": "380 kcal",
     "category": "Breakfast",
-    "image": "images/hero.webp"
+    "image": "images/hero.webp",
+    "ingredients": ["1/2 cup Rolled oats", "1/2 cup Almond milk", "1 scoop Protein powder", "Mixed berries"],
+    "process": "Mix oats, protein powder, and almond milk in a jar. Top with fresh berries. Refrigerate overnight and enjoy cold."
   },
   {
     "id": 3,
@@ -21,7 +25,9 @@
     "prepTime": "40 mins",
     "calories": "450 kcal",
     "category": "Lunch",
-    "image": "images/hero.webp"
+    "image": "images/hero.webp",
+    "ingredients": ["1 Sweet potato", "1/2 cup Black beans", "Avocado", "Lime juice"],
+    "process": "Dice and roast sweet potato at 400°F (200°C) for 30 minutes. Warm black beans. Assemble bowls and top with fresh avocado and a squeeze of lime."
   },
   {
     "id": 4,
@@ -29,7 +35,9 @@
     "prepTime": "35 mins",
     "calories": "420 kcal",
     "category": "Lunch",
-    "image": "images/hero.webp"
+    "image": "images/hero.webp",
+    "ingredients": ["Ground turkey", "Zucchini", "Marinara sauce", "Garlic powder"],
+    "process": "Form turkey into meatballs and bake for 20 minutes. Spiralize zucchini into noodles. Simmer meatballs in marinara sauce and serve over raw or lightly sauteed zoodles."
   },
   {
     "id": 5,
@@ -37,7 +45,9 @@
     "prepTime": "30 mins",
     "calories": "490 kcal",
     "category": "Lunch",
-    "image": "images/hero.webp"
+    "image": "images/hero.webp",
+    "ingredients": ["Salmon fillet", "Asparagus", "Lemon", "Oregano"],
+    "process": "Place salmon and trimmed asparagus on a baking sheet. Drizzle with olive oil, lemon juice, and oregano. Bake at 400°F (200°C) for 15-20 minutes."
   },
   {
     "id": 6,
@@ -45,7 +55,9 @@
     "prepTime": "5 mins",
     "calories": "410 kcal",
     "category": "Smoothie",
-    "image": "images/hero.webp"
+    "image": "images/hero.webp",
+    "ingredients": ["1 Banana", "2 tbsp Peanut butter", "1 scoop Chocolate protein", "Almond milk"],
+    "process": "Combine all ingredients in a blender. Blend on high until smooth and creamy. Serve immediately."
   },
   {
     "id": 7,
@@ -53,7 +65,9 @@
     "prepTime": "20 mins",
     "calories": "350 kcal",
     "category": "Lunch",
-    "image": "images/hero.webp"
+    "image": "images/hero.webp",
+    "ingredients": ["1 can Chickpeas", "Cucumber", "Cherry tomatoes", "Feta cheese"],
+    "process": "Drain and rinse chickpeas. Chop cucumber and tomatoes. Toss all ingredients in a bowl with olive oil and lemon dressing. Divide into portions."
   },
   {
     "id": 8,
@@ -61,7 +75,9 @@
     "prepTime": "30 mins",
     "calories": "510 kcal",
     "category": "Lunch",
-    "image": "images/hero.webp"
+    "image": "images/hero.webp",
+    "ingredients": ["Flank steak", "Broccoli florets", "Soy sauce", "Ginger"],
+    "process": "Slice steak thinly and stir-fry in a hot pan. Add broccoli, ginger, and a splash of soy sauce. Cook until broccoli is tender-crisp. Serve with brown rice."
   },
   {
     "id": 9,
@@ -69,7 +85,9 @@
     "prepTime": "10 mins",
     "calories": "280 kcal",
     "category": "Breakfast",
-    "image": "images/hero.webp"
+    "image": "images/hero.webp",
+    "ingredients": ["3 tbsp Chia seeds", "1 cup Almond milk", "Maple syrup", "Vanilla extract"],
+    "process": "Whisk chia seeds, almond milk, vanilla, and a dash of maple syrup in a container. Let sit for 5 minutes, whisk again, and refrigerate for at least 2 hours."
   },
   {
     "id": 10,
@@ -77,7 +95,9 @@
     "prepTime": "45 mins",
     "calories": "320 kcal",
     "category": "Lunch",
-    "image": "images/hero.webp"
+    "image": "images/hero.webp",
+    "ingredients": ["1 cup Dry lentils", "Spinach", "Vegetable broth", "Cumin"],
+    "process": "Simmer lentils in vegetable broth with cumin and spices until soft (about 30 minutes). Stir in fresh spinach at the very end until wilted."
   },
   {
     "id": 11,
@@ -85,7 +105,9 @@
     "prepTime": "25 mins",
     "calories": "440 kcal",
     "category": "Lunch",
-    "image": "images/hero.webp"
+    "image": "images/hero.webp",
+    "ingredients": ["Firm tofu", "Shelled edamame", "Brown rice", "Sesame dressing"],
+    "process": "Press and cube tofu, then pan-fry until golden. Steam edamame. Serve tofu and edamame over a bed of brown rice and drizzle with sesame dressing."
   },
   {
     "id": 12,
@@ -93,7 +115,9 @@
     "prepTime": "5 mins",
     "calories": "290 kcal",
     "category": "Smoothie",
-    "image": "images/hero.webp"
+    "image": "images/hero.webp",
+    "ingredients": ["Handful Spinach", "1 scoop Vanilla whey", "1/2 Banana", "Water"],
+    "process": "Add water, spinach, protein powder, and banana to a blender. Blend until completely smooth. Add ice if desired."
   },
   {
     "id": 13,
@@ -101,7 +125,9 @@
     "prepTime": "35 mins",
     "calories": "390 kcal",
     "category": "Lunch",
-    "image": "images/hero.webp"
+    "image": "images/hero.webp",
+    "ingredients": ["Chicken breast", "Garlic cloves", "Rosemary", "Olive oil"],
+    "process": "Rub chicken breast with minced garlic, rosemary, and olive oil. Bake at 375°F (190°C) for 25-30 minutes until juices run clear."
   },
   {
     "id": 14,
@@ -109,7 +135,9 @@
     "prepTime": "40 mins",
     "calories": "360 kcal",
     "category": "Lunch",
-    "image": "images/hero.webp"
+    "image": "images/hero.webp",
+    "ingredients": ["Cauliflower head", "1 can Chickpeas", "Paprika", "Tahini"],
+    "process": "Chop cauliflower and toss with drained chickpeas, olive oil, and paprika. Roast at 400°F (200°C) for 30 minutes. Drizzle with tahini before eating."
   },
   {
     "id": 15,
@@ -117,7 +145,9 @@
     "prepTime": "25 mins",
     "calories": "410 kcal",
     "category": "Lunch",
-    "image": "images/hero.webp"
+    "image": "images/hero.webp",
+    "ingredients": ["Large shrimp", "Brown rice", "Bell peppers", "Cajun seasoning"],
+    "process": "Cook brown rice. Sauté sliced bell peppers and shrimp seasoned with Cajun spices until shrimp are pink and opaque. Mix and store."
   },
   {
     "id": 16,
@@ -125,7 +155,9 @@
     "prepTime": "5 mins",
     "calories": "250 kcal",
     "category": "Breakfast",
-    "image": "images/hero.webp"
+    "image": "images/hero.webp",
+    "ingredients": ["1 cup Cottage cheese", "Fresh pineapple chunks", "Chia seeds"],
+    "process": "Spoon cottage cheese into a bowl. Top with fresh pineapple chunks and sprinkle with chia seeds for added texture."
   },
   {
     "id": 17,
@@ -133,7 +165,9 @@
     "prepTime": "15 mins",
     "calories": "460 kcal",
     "category": "Lunch",
-    "image": "images/hero.webp"
+    "image": "images/hero.webp",
+    "ingredients": ["Whole wheat wrap", "Sliced turkey breast", "Avocado", "Spinach"],
+    "process": "Lay out the wrap. Mash avocado and spread it evenly. Layer with fresh spinach and turkey breast. Roll tightly and wrap in foil for storage."
   },
   {
     "id": 18,
@@ -141,7 +175,9 @@
     "prepTime": "5 mins",
     "calories": "390 kcal",
     "category": "Smoothie",
-    "image": "images/hero.webp"
+    "image": "images/hero.webp",
+    "ingredients": ["1 frozen Banana", "1 cup Milk", "1 tbsp Cocoa powder", "Protein powder"],
+    "process": "Place the frozen banana, milk, cocoa powder, and protein powder into a blender. Blend until smooth and pour into a shaker bottle."
   },
   {
     "id": 19,
@@ -149,7 +185,9 @@
     "prepTime": "35 mins",
     "calories": "430 kcal",
     "category": "Lunch",
-    "image": "images/hero.webp"
+    "image": "images/hero.webp",
+    "ingredients": ["Brussels sprouts", "Turkey bacon", "Onion", "Olive oil"],
+    "process": "Halve the Brussels sprouts and dice the onion. Chop turkey bacon. Roast everything on a baking sheet at 400°F (200°C) for 25 minutes, tossing halfway."
   },
   {
     "id": 20,
@@ -157,6 +195,8 @@
     "prepTime": "25 mins",
     "calories": "220 kcal",
     "category": "Breakfast",
-    "image": "images/hero.webp"
+    "image": "images/hero.webp",
+    "ingredients": ["Liquid egg whites", "Spinach", "Diced tomatoes", "Salt & pepper"],
+    "process": "Preheat oven to 350°F (175°C). Spray a muffin tin. Fill cups halfway with spinach and tomatoes. Pour egg whites over the veggies and bake for 15-20 minutes."
   }
 ]
